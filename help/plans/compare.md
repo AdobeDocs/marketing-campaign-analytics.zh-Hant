@@ -1,29 +1,37 @@
 ---
 title: 比較計畫
-description: 瞭解如何比較Mix Modeler中的計畫。
+description: 瞭解如何比較Marketing Campaign Analytics中的計畫。
 feature: Plans
 exl-id: 40f6ade5-77eb-4ef7-ba60-4a2d2fcf1a60
-TQID: https://experienceleague.adobe.com/SJ2SlIAgIaRsrkhzebjky7FvHs4yOvWCxjWjaPi--fc
+autotag-review: '2026-05-01T09:07:12.191Z'
+TQID: 'https://experienceleague.adobe.com/43K31LJ-DUQZ6GzT7bAQMuTHhOl7M-2tSPHqbqqglGA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
 subfeature_v2:
   - id: b2520ae7-8f6c-4952-935e-aacc2c10256f
+    internal-label: Compare plans
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:07:12.191Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 205
-ht-degree: 0%
-
+source-wordcount: '209'
+ht-degree: 1%
 ---
-
 # 比較計畫
 
-若要比較Mix Modeler Plans介面中的計畫：
+{{mm-mca-rebranding}}
+
+若要比較Marketing Campaign Analytics Plans介面中的計畫：
 
 * 選取![比較](/help/assets/icons/Compare.svg) **[!UICONTROL Compare Plans]**。 在比較計畫中，選取每個&#x200B;**[!UICONTROL _選取計畫_]**&#x200B;的計畫。
 
@@ -38,11 +46,11 @@ ht-degree: 0%
 * **[!UICONTROL Channel budgeting]**： **[!UICONTROL AI automated]**&#x200B;或&#x200B;**[!UICONTROL Custom + AI]**
 * **[!UICONTROL Planned spend]**
 * **[!UICONTROL Forecasted ROI]**&#x200B;或 **[!UICONTROL CPA]**
-   * 預測的ROI是計畫的整體預測的ROI （包括來自基礎和非支出管道的增量收入）。
-   * 預測的CPA是計畫的整體預測的CPA （包括來自基礎和非支出管道的增量收入）。
+  * 預測的ROI是計畫的整體預測的ROI （包括來自基礎和非支出管道的增量收入）。
+  * 預測的CPA是計畫的整體預測的CPA （包括來自基礎和非支出管道的增量收入）。
 * **[!UICONTROL Paid marketing ROI]**&#x200B;或&#x200B;**[!UICONTROL CPA]**
-   * 付費行銷ROI是預測ROI的子集。 付費行銷ROI是指計畫中僅付費管道的ROI。
-   * 付費行銷CPA是預測CPA的子集。 付費行銷CPA是計畫中僅限付費管道的CPA。
+  * 付費行銷ROI是預測ROI的子集。 付費行銷ROI是指計畫中僅付費管道的ROI。
+  * 付費行銷CPA是預測CPA的子集。 付費行銷CPA是計畫中僅限付費管道的CPA。
 * **[!UICONTROL ROI]**&#x200B;或&#x200B;**[!UICONTROL CPA]** **[!UICONTROL breakdown]**
 * **[!UICONTROL Forecasted revenue]**&#x200B;或&#x200B;**[!UICONTROL conversion]**。
 * **[!UICONTROL Paid marketing revenue]**&#x200B;或 **[!UICONTROL conversion]**

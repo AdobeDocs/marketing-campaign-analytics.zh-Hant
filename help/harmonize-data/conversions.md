@@ -1,12 +1,13 @@
 ---
 title: 轉換
-description: 瞭解如何在Mix Modeler中建立轉換，以便用於協調資料的一部分。
+description: 瞭解如何在Marketing Campaign Analytics中建立轉換，以便用於協調資料的一部分。
 feature: Harmonized Data, Conversions
 exl-id: a8559426-452a-43e8-9a60-0c0bc97d863c
-TQID: https://experienceleague.adobe.com/rjFYd9XMTc5z4frFlq41PJqh9Zim-qoHSToyZenTPXE
+autotag-review: '2026-05-01T09:15:50.061Z'
+TQID: 'https://experienceleague.adobe.com/5m8Z9cc9d42019sNXkstXDn6cOo-2yzzQWCw0VG1YrY'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
@@ -18,14 +19,16 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-autotag-review: '2026-05-01T09:15:50.061Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 10%
+source-wordcount: '454'
+ht-degree: 9%
 ---
 # 轉換 {#conversions}
 
+{{mm-mca-rebranding}}
+
+{{mm-mca-rebranding}}
 
 >[!CONTEXTUALHELP]
 >id="harmonizeddata_conversions_create"
@@ -39,7 +42,7 @@ ht-degree: 10%
 
 ## 管理轉換
 
-若要檢視可用轉換的表格，請在Mix Modeler介面中：
+若要檢視可用轉換的表格，請在Marketing Campaign Analytics介面中：
 
 1. 從左側邊欄選取![資料搜尋](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -51,15 +54,15 @@ ht-degree: 10%
 | --- | ---|
 | 名稱 | 轉換的名稱。 |
 | 收入 | 用於計算轉換收入的協調資料量度。 |
-| 轉換量度 | 用作分析轉換量度的協調資料量度。 |
-| 類別 | 轉換的轉換類別。 |
+| 轉換量度 | 用作分析轉換量度的協調資料量度。 這表示主要數值業務結果，例如：訂購、收入、訂閱數量等。 |
+| 類別 | 要套用的轉換規則，其中轉換維度用來分類轉換型別。 |
 | 建立時間 | 建立轉換的日期和時間。 |
 | 上次修改時間 | 上次修改轉換的日期和時間。 |
 
 
 ## 新增轉換
 
-若要新增轉換，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]**&#x200B;介面中：
+若要新增轉換，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]**&#x200B;介面中：
 
 1. 選取![新增](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add a conversion]**。
 
@@ -73,7 +76,7 @@ ht-degree: 10%
 
       1. 選取運運算元![V](/help/assets/icons/ChevronDown.svg)的值，例如&#x200B;**[!UICONTROL is]**。
 
-      1. 從&#x200B;**[!UICONTROL *選取值&#x200B;*]**&#x200B;或輸入值，例如&#x200B;**[!UICONTROL Store]**。
+      1. 從&#x200B;**[!UICONTROL *選取值&#x200B;*]**或輸入值，例如&#x200B;**[!UICONTROL Store]**。
 
    1. 從&#x200B;**[!UICONTROL Conversion metric for analysis]**&#x200B;中選取協調欄位，例如&#x200B;**[!UICONTROL Orders]**。
 
@@ -104,7 +107,7 @@ ht-degree: 10%
 
    ![轉換檢視報告](../assets/conversion-view-report.png)
 
-   * 若要變更報告粒度，請從&#x200B;**[!UICONTROL Weekly]**&#x200B;下拉式選單中選取值。
+   * 若要變更要報告的粒度，請從&#x200B;**[!UICONTROL Weekly]**&#x200B;下拉式選單中選取一個值。
    * 若要變更要報告的期間，請輸入開始與結束日期，或使用![行事曆](/help/assets/icons/Calendar.svg)在行事曆快顯視窗中定義期間。
 
 1. 選取&#x200B;**[!UICONTROL Close]**&#x200B;以關閉對話方塊。

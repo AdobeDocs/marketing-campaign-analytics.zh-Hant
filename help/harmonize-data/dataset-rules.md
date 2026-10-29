@@ -1,15 +1,24 @@
 ---
 title: 資料集規則
-description: 瞭解如何定義資料集規則，以便在Mix Modeler中協調資料時使用。
+description: 瞭解如何定義資料集規則，以便在Marketing Campaign Analytics中協調資料時使用。
 feature: Harmonized Data, Dataset Rules
 exl-id: 57d7940a-2900-4814-a30d-bb02bff7615d
-TQID: https://experienceleague.adobe.com/AHQ73zgE97hHUbZ-lW9-l0c-MKHjA50Qcj9w02MjyGM
+autotag-review: '2026-05-01T09:12:48.985Z'
+TQID: 'https://experienceleague.adobe.com/y9TAqZY49fiIesDpEQ-NO58bR2SU3hYvqk5lAlgrslA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: ba4fd72c-282e-4fb6-abc1-08e6fb87b2ad
     internal-label: Dataset rules
@@ -27,15 +36,16 @@ topic_v2:
     internal-label: Measurement
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-autotag-review: '2026-05-01T09:12:48.985Z'
-source-git-commit: 0e1bd1a2e96e96b98be502b9c8413d63816efa3d
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2169'
 ht-degree: 3%
 ---
 # 資料集規則
 
-資料集規則可協助您將協調的欄位與您在Mix Modeler中擷取的資料欄位進行對應。
+{{mm-mca-rebranding}}
+
+資料集規則可協助您將協調的欄位與您在Marketing Campaign Analytics中擷取的資料欄位進行對應。
 
 * 對於您在Adobe Experience Platform中擷取的彙總資料，您可以將一個或多個可用的資料集欄位對應到適當的和諧欄位。
 * 對於事件資料，您可以直接或使用條件，個別將一個或多個和諧的欄位對應到資料集中的欄位。
@@ -44,7 +54,7 @@ ht-degree: 3%
 
 ## 管理資料集規則
 
-若要檢視可用資料集規則的表格，請在Mix Modeler介面中：
+若要檢視可用資料集規則的表格，請在Marketing Campaign Analytics介面中：
 
 1. 從左側邊欄選取![資料搜尋](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -76,7 +86,7 @@ ht-degree: 3%
 
 ### 建立資料集規則
 
-若要建立資料集規則，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中，選取&#x200B;**[!UICONTROL Dataset rules configuration]**&#x200B;精靈中的&#x200B;**[!UICONTROL Create a dataset rule]**。
+若要建立資料集規則，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中，選取&#x200B;**[!UICONTROL Dataset rules configuration]**&#x200B;精靈中的&#x200B;**[!UICONTROL Create a dataset rule]**。
 
 在&#x200B;**[!UICONTROL Create]**&#x200B;畫面中，
 
@@ -90,7 +100,7 @@ ht-degree: 3%
 
    對於行銷分析師而言，來自發佈商的報表資料非常重要，因為與發佈商合作通常意味著要花費大量成本，而報表資料的變更可能會導致非常不同的深入分析和投資計畫。 此外，行銷分析人員需要精確資料，才能獲得正確的深入分析和令人信服的提案，進而獲得利害關係人的信心。 然而，這些發佈者（例如Google和Facebook）在調解資料時，通常會重述或刪除報表資料。 大部分變更的時間範圍都在報告媒體效能的7天內。 30天內可能會對資料進行其他變更。 一般而言，30天後，書籍會被視為已關閉且資料完整。
 
-   Mix Modeler支援資料重述。 以確保用於報表、建模和計畫的資料是準確的。 而且資料能夠支援品牌和行銷分析人員的期望和需求。
+   Marketing Campaign Analytics支援資料重述。 以確保用於報表、建模和計畫的資料是準確的。 而且資料能夠支援品牌和行銷分析人員的期望和需求。
 
    您可以傳送重述的摘要資料列作為Experience Platform資料集中的增量資料列，而協調服務會以該重述資料更新協調的資料集。 同樣地，您也可以移除需要反映在協調服務中的摘要資料列。
 
@@ -106,11 +116,11 @@ ht-degree: 3%
 
      1. 從&#x200B;**[!UICONTROL Mapping type]**&#x200B;中選取&#x200B;**[!UICONTROL Map Into]**&#x200B;或&#x200B;**[!UICONTROL Case]**。
 
-     1. 當您已選取&#x200B;**[!UICONTROL Map Into]**&#x200B;時，請選取&#x200B;**[!UICONTROL Field]**&#x200B;和&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**&#x200B;或&#x200B;**[!UICONTROL Value]**，以及預設值，以將協調的欄位依預設對應到資料集欄位或輸入的值。
+     1. 當您已選取&#x200B;**[!UICONTROL Map Into]**&#x200B;時，請選取&#x200B;**[!UICONTROL Field]**&#x200B;和&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**或&#x200B;**[!UICONTROL Value]**，以及預設值，以將協調的欄位依預設對應到資料集欄位或輸入的值。
 
-     1. 當您選取&#x200B;**[!UICONTROL Case]**&#x200B;時，請選取&#x200B;**[!UICONTROL Field]**&#x200B;和&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**&#x200B;或&#x200B;**[!UICONTROL Value]**，以及預設值，以依預設將協調欄位對應到資料集欄位或輸入的值。
+     1. 當您選取&#x200B;**[!UICONTROL Case]**&#x200B;時，請選取&#x200B;**[!UICONTROL Field]**&#x200B;和&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**或&#x200B;**[!UICONTROL Value]**，以及預設值，以依預設將協調欄位對應到資料集欄位或輸入的值。
 
-        1. 若要明確設定值，您可以定義一或多個案例，由一或多個條件組成。 每個條件都可以檢查特定的&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**，無論是&#x200B;**[!UICONTROL Exists]**&#x200B;或&#x200B;**[!UICONTROL Not Exists]**，或是&#x200B;**[!UICONTROL Contains]**、**[!UICONTROL Not Contains]**、**[!UICONTROL Equals]**、**[!UICONTROL Not Equals]**、**[!UICONTROL Starts With]**&#x200B;或&#x200B;**[!UICONTROL Ends With]**，輸入於&#x200B;**[!UICONTROL *&#x200B;輸入的值&#x200B;*]**。
+        1. 若要明確設定值，您可以定義一或多個案例，由一或多個條件組成。 每個條件都可以檢查特定的&#x200B;**[!UICONTROL *AEP資料集欄位&#x200B;*]**，無論是&#x200B;**[!UICONTROL Exists]**或&#x200B;**[!UICONTROL Not Exists]**，或是&#x200B;**[!UICONTROL Contains]**、**[!UICONTROL Not Contains]**、**[!UICONTROL Equals]**、**[!UICONTROL Not Equals]**、**[!UICONTROL Starts With]**或&#x200B;**[!UICONTROL Ends With]**，輸入於**[!UICONTROL *&#x200B;輸入的值&#x200B;*]**。
 
         1. 若要新增其他案例，請選取![新增](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add case]**，若要新增其他條件，請選取![新增](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add condition]**。
 
@@ -142,7 +152,7 @@ ht-degree: 3%
 
 #### 摘要資料集
 
-當您從摘要資料集對應標準協調欄位時，Mix Modeler會嘗試推斷對應的Experience Platform資料集欄位。 成功時：
+當您從摘要資料集對應標準協調欄位時，Marketing Campaign Analytics會嘗試推斷對應的Experience Platform資料集欄位。 成功時：
 
 * 如果欄位屬於型別維度，則會選取&#x200B;**[!UICONTROL Map into]**&#x200B;作為&#x200B;**[!UICONTROL Mapping type]**。
 * 如果欄位屬於型別量度，則會選取&#x200B;**[!UICONTROL Sum]**&#x200B;作為&#x200B;**[!UICONTROL Mapping type]**。
@@ -219,7 +229,7 @@ ht-degree: 3%
 
 ### 編輯資料集規則
 
-若要編輯資料集規則，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中：
+若要編輯資料集規則，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中：
 
 1. 針對您要編輯的資料集規則，在&#x200B;**[!UICONTROL Dataset]**&#x200B;欄中選取![更多](/help/assets/icons/More.svg)。
 1. 從內容功能表中，選取![編輯](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**&#x200B;以開始編輯資料集規則。 如需詳細資訊，請參閱[建立資料集規則](#create-a-dataset-rule)。
@@ -227,7 +237,7 @@ ht-degree: 3%
 
 ### 刪除資料集規則
 
-若要刪除資料集規則，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中：
+若要刪除資料集規則，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]**&#x200B;介面中：
 
 1. 針對您要刪除的資料集規則，在&#x200B;**[!UICONTROL Dataset]**&#x200B;欄中選取![更多](/help/assets/icons/More.svg)。
 1. 從內容功能表中，選取![刪除](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;以刪除資料集規則。 系統會提示您進行確認。 選取&#x200B;**[!UICONTROL Delete]**&#x200B;以永久刪除選取的資料集規則。
@@ -296,7 +306,7 @@ ht-degree: 3%
    * 若要新增特定量度型偏好設定：
 
      1. 選取![加](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add a metric]**。
-        1. 從&#x200B;**[!UICONTROL *度量選擇&#x200B;*]**&#x200B;清單中選取度量。
+        1. 從&#x200B;**[!UICONTROL *度量選擇&#x200B;*]**清單中選取度量。
         1. 選取「**[!UICONTROL CHANNELS]**」或「**[!UICONTROL CONVERSION TYPES]**」。 從清單中選取&#x200B;**[!UICONTROL All]**&#x200B;或特定的管道或轉換型別。
         1. 選取&#x200B;**[!UICONTROL Summary]**&#x200B;或&#x200B;**[!UICONTROL Event]**，以指定合併資料時，彙總資料或事件資料是否偏好量度（以及所有或選取的管道）。
 

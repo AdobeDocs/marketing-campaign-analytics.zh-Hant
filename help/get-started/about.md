@@ -1,25 +1,25 @@
 ---
-title: Mix Modeler 概觀
-description: 取得 Mix Modeler 的功能概觀。
-short-description: 取得 Mix Modeler 的功能概觀。
+title: Marketing Campaign Analytics概觀
+description: 取得Marketing Campaign Analytics的功能概觀。
+short-description: 取得Marketing Campaign Analytics的功能概觀。
 feature: Plans, Harmonized Data, Models
 exl-id: aa1018d5-b073-4dfb-b40c-ca16a8970b2f
 autotag-review: '2026-05-01T09:14:10.130Z'
-TQID: 'https://experienceleague.adobe.com/66NcfgGeMriaUXgpJ-h2MV2PBISSE5GMz3WWuF-i2u4'
+TQID: 'https://experienceleague.adobe.com/p5U62D65U-w6VtaGOsBuJlKWxcz2p-Qgku6zq-ezNQo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
-  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
-    internal-label: Marketing touch attribution
-  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
-    internal-label: Plans
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
     internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,24 +40,24 @@ topic_v2:
     internal-label: Machine learning
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 3%
+source-wordcount: '786'
+ht-degree: 0%
 ---
-# Mix Modeler 概觀
+# Marketing Campaign Analytics概觀
 
-由Adobe Sensei支援的Mix Modeler可讓行銷人員跨所有管道（付費、贏取和擁有）來評估行銷活動及最佳化規劃。 其統一的方法論會以漸進方式在行銷接觸點和彙總層級進行測量，同時確保完全一致的結果。
+由Adobe Sensei支援的Marketing Campaign Analytics可讓行銷人員跨所有管道（付費、贏取和擁有）來評估行銷活動及最佳化規劃。 其統一的方法論會以漸進方式在行銷接觸點和彙總層級進行測量，同時確保完全一致的結果。
 
-Mix Modeler透過整體（端對端）測量應用程式，用於數位和離線行銷，提供所有行銷活動對業務和行銷活動結果的累加影響。
+Marketing Campaign Analytics透過整體（端對端）測量應用程式，用於數位和離線行銷，提供所有行銷活動對業務和行銷活動結果的累加影響。
 
-Mix Modeler在策略與戰術層面提供下列最佳化且可操作的深入分析型別，讓您更能瞭解：
+Marketing Campaign Analytics在策略與戰術層面提供下列最佳化且可操作的深入分析型別，讓您更能瞭解：
 
 * 跨各種管道的行銷支出和產生的效能，以及
 * 達成未來業務目標的建議投資水準。
 
 
-為了完成此功能，Mix Modeler結合了：
+為了完成此功能，Marketing Campaign Analytics結合了：
 
 * 由下而上（事件層級）資料和由上而下（彙總層級）資料，
 * 外部市場因素與內部因素，以及
@@ -70,7 +70,7 @@ AI/ML雙向傳輸學習結合行銷組合模型(MMM)和多點接觸歸因(MTA)�
 
 ## 功能
 
-Mix Modeler提供下列功能：
+Marketing Campaign Analytics提供下列功能：
 
 | 功能 | 說明 |
 |---|---|
@@ -83,12 +83,12 @@ Mix Modeler提供下列功能：
 
 >[!MORELIKETHIS]
 >
->[瞭解Mix Modeler工作流程](workflow.md)
+>[瞭解Marketing Campaign Analytics工作流程](workflow.md)
 
 
 ### 行銷組合模型(MMM)
 
-Mix Modeler中的行銷組合模型是保護隱私的機器學習分析，用於測量各種行銷策略和業務因素對轉換量度的累加影響。 它可協助企業和行銷人員瞭解
+Marketing Campaign Analytics中的行銷組合模型是保護隱私的機器學習分析，用於測量各種行銷策略和業務因素對轉換量度的累加影響。 它可協助企業和行銷人員瞭解
 
 * 行銷策略的成效，
 * 業務因素對客戶行為的影響，以及
@@ -96,7 +96,7 @@ Mix Modeler中的行銷組合模型是保護隱私的機器學習分析，用於
 
 這項全方位的分析可讓企業策略性地跨各種業務型別、區域、管道和促銷活動分配行銷預算，同時還能提供未來事件業務影響的預測性深入分析。
 
-Mix Modeler的行銷組合模型化功能是解決下列使用案例的基礎：
+Marketing Campaign Analytics的行銷組合模型化功能是解決下列使用案例的基礎：
 
 * 高階主管報告：可讓高階主管瞭解行銷的真正累加影響，瞭解整體以及通路、地區、SKU等差異。
 * 策略規劃：為長期行銷策略提供資訊，並為未來行銷活動設定現實的目標和基準
@@ -106,9 +106,9 @@ Mix Modeler的行銷組合模型化功能是解決下列使用案例的基礎：
 
 ### 多點觸控歸因(MTA)
 
-Mix Modeler中的多重接觸歸因是選用的機器學習分析，可讓您運用將點數歸因到導致轉換事件的事件層級接觸點。 行銷人員使用此歸因，協助量化客戶歷程中各個獨立行銷接觸點對可追蹤行銷的影響。 這些數位行銷活動的接觸點通常是顯示廣告點按、電子郵件傳送、電子郵件開啟和付費搜尋點按。 多重接觸歸因無法測量大部分的離線接觸點，例如平面廣告、廣告牌或電視廣告和商業因素。 這些接觸點只有摘要層級資料，無法結合至客戶歷程。
+Marketing Campaign Analytics中的多重接觸歸因是選用的機器學習分析，可讓您運用將點數歸因到導致轉換事件的事件層級接觸點。 行銷人員使用此歸因，協助量化客戶歷程中各個獨立行銷接觸點對可追蹤行銷的影響。 這些數位行銷活動的接觸點通常是顯示廣告點按、電子郵件傳送、電子郵件開啟和付費搜尋點按。 多重接觸歸因無法測量大部分的離線接觸點，例如平面廣告、廣告牌或電視廣告和商業因素。 這些接觸點只有摘要層級資料，無法結合至客戶歷程。
 
-Mix Modeler的多點觸控歸因支援兩種類別的分數：
+Marketing Campaign Analytics的多點觸控歸因支援兩種類別的分數：
 
 * 演演算法分數，包括累加分數和受影響的分數：
   * 受影響的分數是每個行銷接觸點負責的轉換比例。
@@ -116,13 +116,13 @@ Mix Modeler的多點觸控歸因支援兩種類別的分數：
 
 * 規則型分數，包括「首次接觸」、「上次接觸」、「線性」、「U形」和「時間衰減」。
 
-您可以在下列使用案例中使用Mix Modeler的多點觸控歸因功能：
+您可以在下列使用案例中使用Marketing Campaign Analytics的多點觸控歸因功能：
 
 * 行銷活動預算分配：通知各行銷管道的預算分配決策。
 * 行銷活動最佳化：在每個管道中，瞭解哪些行銷活動、創意和關鍵字對於哪些SKU或Geo的效果更好。 此瞭解可讓您檢視每個管道，讓行銷團隊能夠最佳化其策略。
 * 完整funnel事件層級歸因：瞭解行銷對整個客戶歷程的影響。 例如，免費帳戶註冊以取得付費轉換及其他功能。
 * 合作夥伴評估：根據歸因結果評估機構和合作夥伴的成效。
 
-請參閱[模型深入分析 — 歸因](../models/insights.md#attribution)，瞭解如何存取Mix Modeler中的多重接觸歸因深入分析。
+請參閱[模型深入分析 — 歸因](../models/insights.md#attribution)，瞭解如何存取Marketing Campaign Analytics中的多重接觸歸因深入分析。
 
 

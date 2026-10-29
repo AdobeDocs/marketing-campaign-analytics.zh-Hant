@@ -1,15 +1,20 @@
 ---
 title: 協調資料集概述
-description: 瞭解如何在Mix Modeler中協調資料。
+description: 瞭解如何在Marketing Campaign Analytics中協調資料。
 feature: Harmonized Data
 exl-id: 6cb70762-e3b2-46a0-b028-1d6daf3edae5
-TQID: https://experienceleague.adobe.com/9ki9Q-ZAmwmiyYFt-EAaa1ybylaoMauTvoxQ9ux1IEI
+autotag-review: '2026-05-01T09:10:10.340Z'
+TQID: 'https://experienceleague.adobe.com/QFpx2-PjU-GBiyocCsL-myjLoETUJGOikkLcdaGDlGk'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: bc2f5225-03d4-4bc8-89ec-99d78c30e6dd
     internal-label: Conversions
@@ -29,20 +34,21 @@ role_v2:
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
-autotag-review: '2026-05-01T09:10:10.340Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1389'
 ht-degree: 17%
 ---
 # 協調資料集概述
 
-Mix Modeler中的資料根據資料來源具有不同的性質。 資料可以是：
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的資料根據資料來源具有不同的性質。 資料可以是：
 
 * 彙總或摘要資料，例如，從圍牆花園資料來源收集而來，或是從公告牌行銷活動、事件或實體廣告行銷活動收集而來的離線廣告資料（如支出）。
 * 事件資料，例如來自第一方資料來源的資料。 此事件資料可以透過Adobe Analytics來源聯結器從Adobe Analytics收集，或透過Experience Platform Web、Mobile SDK或Edge Network API收集，或使用來源聯結器擷取的資料。
 
-Mix Modeler的協調服務會將彙總和事件資料同化為一致的資料檢視。 此資料檢視是Mix Modeler中模型的來源。 此服務會使用不同資料集的最高精細度。 例如，如果某個資料集的詳細程度為每月，而其餘資料集的詳細程度為每週和每日，則協調服務會使用每月詳細程度建立資料檢視。
+Marketing Campaign Analytics的協調服務會將彙總和事件資料同化為一致的資料檢視。 此資料檢視是Marketing Campaign Analytics中模型的來源。 此服務會使用不同資料集的最高精細度。 例如，如果某個資料集的詳細程度為每月，而其餘資料集的詳細程度為每週和每日，則協調服務會使用每月詳細程度建立資料檢視。
 
 ## 因素
 
@@ -52,7 +58,7 @@ Mix Modeler的協調服務會將彙總和事件資料同化為一致的資料檢
 
 * 外部因素是組織無法控制的因素，但仍可影響您獲得的轉換。 例如CPI、S&amp;P 500等。
 
-Mix Modeler中的因子功能使用協調的因子工作流程。 此工作流程會簡化管理因素的方式、提供模型間的一致性，並提供直覺式的體驗。
+Marketing Campaign Analytics中的因子功能使用協調的因子工作流程。 此工作流程會簡化管理因素的方式、提供模型間的一致性，並提供直覺式的體驗。
 
 在協調因子工作流程中：
 
@@ -71,7 +77,7 @@ Mix Modeler中的因子功能使用協調的因子工作流程。 此工作流�
 
 ## 協調資料的範例
 
-假設您有以下資料集可用於Mix Modeler。
+假設您有以下資料集可用於Marketing Campaign Analytics。
 
 **資料集1**
 
@@ -164,7 +170,7 @@ Mix Modeler中的因子功能使用協調的因子工作流程。 此工作流�
 
 ## 檢視已協調的資料
 
-若要在Mix Modeler介面中檢視您的協調資料：
+若要在Marketing Campaign Analytics介面中檢視您的協調資料：
 
 1. 從左側邊欄選取![資料搜尋](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized datasets]**。
 
@@ -184,7 +190,7 @@ Mix Modeler中的因子功能使用協調的因子工作流程。 此工作流�
 
    1. 選取&#x200B;**[!UICONTROL Submit]**&#x200B;以提交您的欄設定變更。 選取&#x200B;**[!UICONTROL Close]**&#x200B;以取消您所做的任何變更。
 
-1. 如果有更多頁面可供使用，請使用&#x200B;_x _&#x200B;**的**&#x200B;Page _x_&#x200B;上的![向左箭頭](/help/assets/icons/ChevronLeft.svg)或![向右箭頭](/help/assets/icons/ChevronRight.svg)在頁面之間移動。
+1. 如果有更多頁面可供使用，請使用&#x200B;_x _]**的**[!UICONTROL Page _x_&#x200B;上的![向左箭頭](/help/assets/icons/ChevronLeft.svg)或![向右箭頭](/help/assets/icons/ChevronRight.svg)在頁面之間移動。
 
 1. 您可以選擇下載協調的資料。
 

@@ -1,27 +1,32 @@
 ---
 title: 行銷接觸點
-description: 瞭解如何在Mix Modeler中建立行銷接觸點，以用來協調您的資料。
+description: 瞭解如何在Marketing Campaign Analytics中建立行銷接觸點，以用來協調您的資料。
 feature: Harmonized Data, Marketing Touch Points
 exl-id: 42851107-7568-4bc9-92ca-3cba713a522e
-TQID: https://experienceleague.adobe.com/6HEgtbsEegA-XyeNQTCQd5JhMZyKZ9BzxPAiJGOr1N0
+autotag-review: '2026-05-01T09:13:36.558Z'
+TQID: 'https://experienceleague.adobe.com/C6T9Ga2PICq3GBgEtsnZsB8C9xiO7hZXsdHfv7TqkLE'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
 subfeature_v2:
   - id: b2d4aeb9-eabe-49f6-8edb-bb2862d5980b
+    internal-label: Marketing touchpoints
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:13:36.558Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 477
+source-wordcount: '481'
 ht-degree: 12%
-
 ---
-
 # 行銷接觸點 {#marketing-touchpoints}
+
+{{mm-mca-rebranding}}
 
 >[!CONTEXTUALHELP]
 >id="harmonizeddata_marketingtouchpoints_create"
@@ -35,11 +40,11 @@ ht-degree: 12%
 
 ## 管理行銷接觸點
 
-若要檢視Mix Modeler介面中可用的行銷接觸點表格：
+若要檢視Marketing Campaign Analytics介面中可用的行銷接觸點表格：
 
 1. 從左側邊欄選取![資料搜尋](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
-1. 從頂端列選取&#x200B;**[!UICONTROL Marketing touchpoint]**。 您會看到行銷接觸點表格。 如果有更多頁面可供使用，請使用&#x200B;_x _&#x200B;**的**&#x200B;Page _x_&#x200B;上的![向左箭頭](/help/assets/icons/ChevronLeft.svg)或![向右箭頭](/help/assets/icons/ChevronRight.svg)在資料表的頁面之間移動。
+1. 從頂端列選取&#x200B;**[!UICONTROL Marketing touchpoint]**。 您會看到行銷接觸點表格。 如果有更多頁面可供使用，請使用&#x200B;_x _]**的**[!UICONTROL Page _x_&#x200B;上的![向左箭頭](/help/assets/icons/ChevronLeft.svg)或![向右箭頭](/help/assets/icons/ChevronRight.svg)在資料表的頁面之間移動。
 
 表格欄會指定行銷接觸點的詳細資訊：
 
@@ -55,7 +60,7 @@ ht-degree: 12%
 
 ## 新增行銷接觸點
 
-若要新增行銷接觸點，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Marketing touchpoint]**&#x200B;介面中：
+若要新增行銷接觸點，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Marketing touchpoint]**&#x200B;介面中：
 
 1. 選取![新增](/help/assets/icons/AddCircle.svg)新增行銷接觸點。
 
@@ -65,11 +70,11 @@ ht-degree: 12%
 
    1. 定義&#x200B;**[!UICONTROL Touchpoint rule]**。
 
-      1. 從&#x200B;**[!UICONTROL *選取協調的&#x200B;*]**&#x200B;中選取一個值，例如&#x200B;**[!UICONTROL Brand]**。
+      1. 從&#x200B;**[!UICONTROL *選取協調的&#x200B;*]**中選取一個值，例如&#x200B;**[!UICONTROL Brand]**。
 
       1. 選取運運算元![V](/help/assets/icons/ChevronDown.svg)的值，例如&#x200B;**[!UICONTROL is]**。
 
-      1. 從&#x200B;**[!UICONTROL *選取值&#x200B;*]**&#x200B;或輸入值，例如&#x200B;**[!DNL Luma]**。
+      1. 從&#x200B;**[!UICONTROL *選取值&#x200B;*]**或輸入值，例如&#x200B;**[!DNL Luma]**。
 
    1. 從&#x200B;**[!UICONTROL Touchpoint volume]**&#x200B;中選取協調欄位，例如&#x200B;**[!UICONTROL Impressions]**。
 
@@ -101,7 +106,7 @@ ht-degree: 12%
 
    ![行銷接觸點檢視報告](../assets/marketingtouchpoint-view-report.png)
 
-   * 若要變更報告粒度，請從&#x200B;**[!UICONTROL Weekly]**&#x200B;下拉式選單中選取值。
+   * 若要變更要報告的粒度，請從&#x200B;**[!UICONTROL Weekly]**&#x200B;下拉式選單中選取一個值。
    * 若要變更要報告的期間，請輸入開始與結束日期，或使用![行事曆](/help/assets/icons/Calendar.svg)在行事曆快顯視窗中定義期間。
 
 1. 選取&#x200B;**[!UICONTROL Close]**&#x200B;以關閉對話方塊。

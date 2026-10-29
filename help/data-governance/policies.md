@@ -1,14 +1,16 @@
 ---
 title: 原則
-description: 瞭解如何從Mix Modeler存取原則。
+description: 瞭解如何從Marketing Campaign Analytics存取原則。
 feature: Administration
 exl-id: 4dba7c30-ad1e-4213-a2b0-afc55f2448a3
 autotag-review: '2026-05-01T09:17:02.907Z'
-TQID: 'https://experienceleague.adobe.com/fk6qAZS7Uymx2dzptcazBieXIJ3mGF2pjG-EDhm-Kh4'
+TQID: 'https://experienceleague.adobe.com/uTMFYn3vc4-6JJefPhgFXGwaajrWQbgr9lW0y2s5B8U'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: f6633d1c-3d2d-4f48-95d4-4bbc9913db52
     internal-label: Data governance
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
@@ -30,16 +32,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '509'
 ht-degree: 2%
 ---
 # 原則
 
-一旦您通過工作流程建立模型並提交模型的組態，[原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview#automatic-enforcement)會檢查是否有任何違規。 如果發生原則違規，會出現一個彈出視窗，指出已違反一或多個原則。 此檢查旨在確保您在Experience Platform中的資料作業和行銷動作符合資料使用原則。
+{{mm-mca-rebranding}}
 
-依預設，Mix Modeler會檢查與下列標籤和行銷動作相關聯的Adobe定義原則是否違規：
+一旦您通過工作流程建立模型並提交模型的組態，[原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview#automatic-enforcement)會檢查是否有任何違規。 如果發生原則違規，會出現一個彈出視窗，指出已違反一或多個原則。 此檢查旨在確保您在Experience Platform中的資料作業和行銷動作符合資料使用原則。
+
+依預設，Marketing Campaign Analytics會檢查與下列標籤和行銷動作相關聯的Adobe定義原則是否違規：
 
 | 原則名稱 | 關聯的標籤 | 關聯的行銷動作 |
 |---|---|---|
@@ -81,12 +85,12 @@ ht-degree: 2%
 左側邊欄中的![隱私權](/help/assets/icons/Privacy.svg) **[!UICONTROL Policies]**&#x200B;選項可讓您存取Experience Platform的[!UICONTROL Policies]介面，進而管理您的原則、標籤和行銷動作。
 
 <!--
-Currently,  Mix Modeler does not support all of the data governance functionality offered by Experience Platform. Field level access control is supported. See [Field level access control](../harmonize-data/dataset-rules.md#field-level-access-control)
+Currently,  Marketing Campaign Analytics does not support all of the data governance functionality offered by Experience Platform. Field level access control is supported. See [Field level access control](../harmonize-data/dataset-rules.md#field-level-access-control)
 -->
 
 >[!MORELIKETHIS]
 >
->[資料使用原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/policies/overview)
+>[資料使用原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
 >
 >
 

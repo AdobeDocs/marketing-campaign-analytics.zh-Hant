@@ -6,32 +6,39 @@ feature: Release Notes
 hide: true
 exl-id: 5f832a79-7a0c-43cd-87cf-a5ceceb79032
 autotag-review: '2026-05-01T09:04:46.084Z'
-TQID: 'https://experienceleague.adobe.com/BTd4-OINWubpSgFga7QE-ASje73fnySf1nIxTOivlVQ'
+TQID: 'https://experienceleague.adobe.com/SJJvWD0kj0TqoP-rc4RQq9fTsFw5X1GSbSWtp1I0aTo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
-  - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
-    internal-label: Administration
   - id: ca6bcd6f-f5ca-4e5f-a5ae-7dce7177bde9
     internal-label: Release notes
+  - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
+    internal-label: Administration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%
 ---
 # 測試
 
+{{mm-mca-rebranding}}
+
 使用Unicode字元測試表格
 
 | 標記 | 資料視圖 | 擁有者 | 其他篩選器 |
 |---|---|---|---|
-| 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋標籤*&#x200B;來限制標籤清單。 <br/><br/>當您選取一或多個標籤時，清單會自動限製為顯示其他可能的剩餘標籤。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**&#x200B;中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**&#x200B;中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**&#x200B;中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**&#x200B;中的數字⃣參考使用spefici標籤標籤的篩選數目。🅐 🅔 |
+| 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋標籤*&#x200B;來限制標籤清單。 <br/><br/>當您選取一或多個標籤時，清單會自動限製為顯示其他可能的剩餘標籤。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**中的數字⃣參考使用spefici標籤標籤的篩選數目。 | 您可以![搜尋](/help/assets/icons/Search.svg) *搜尋資料檢視*&#x200B;以限制資料檢視的清單。 <br/>您可以選取多個資料檢視來篩選篩選篩選清單。 <br/><br/> **[!UICONTROL Tags]**&#x200B;中的數字&#x200B;**⃣**&#x200B;是指可用標籤的數目。 <br/><br/> **[!UICONTROL *標籤&#x200B;*]**中的數字⃣參考使用spefici標籤標籤的篩選數目。🅐 🅔 |
 
 {style="table-layout:fixed"}
 
@@ -42,7 +49,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-本文記錄了![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**&#x200B;中的歸因面板。<br/>若需本文的![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**&#x200B;版本，請參閱[歸因面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/attribution)。
+本文記錄了![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**&#x200B;中的歸因面板。<br/>若需本文的![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**&#x200B;版本，請參閱[歸因面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)。
 
 >[!ENDSHADEBOX]
 

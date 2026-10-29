@@ -1,33 +1,45 @@
 ---
 title: 計畫總覽
-description: 瞭解如何在Mix Modeler中檢視、選取和操作計畫。
+description: 瞭解如何在Marketing Campaign Analytics中檢視、選取和操作計畫。
 feature: Plans
 exl-id: 45a8dc30-3259-493d-8ea5-1899903733a6
-TQID: https://experienceleague.adobe.com/0cBg65pu0-gkk1AlWOvQHxn5RUaIRkOs1Yz7FPppcsk
 autotag-review: '2026-05-01T09:05:53.776Z'
+TQID: 'https://experienceleague.adobe.com/OZjW5A4DP1raHwQgA5RSrbyFAwEp5gKPrzezj59nnFA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: d7b067e6-4f39-41e9-a081-7650346a84cd
+    internal-label: Build plans
   - id: b2520ae7-8f6c-4952-935e-aacc2c10256f
+    internal-label: Compare plans
   - id: e6c284e0-b6e6-4f82-bf96-e96bb5157b90
+    internal-label: Plan insights
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Insights
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 679
+source-wordcount: '683'
 ht-degree: 0%
-
 ---
-
 # 計畫總覽
 
-Mix Modeler中的計畫可讓您依業務單位和管道分配預算。 計畫功能會根據您協調的資料與已訓練模型的結果整合。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的計畫可讓您依業務單位和管道分配預算。 計畫功能會根據您協調的資料與已訓練模型的結果整合。
 
 計畫概述企業打算在指定時間範圍內用於行銷相關專案的任意投資（例如預算）。 這些投資是為了服務常見的KPI （例如訂單、收入）。 計畫可包含來自付費廣告、贊助網路內容、活動等管道的費用。
 
@@ -48,12 +60,12 @@ Mix Modeler中的計畫可讓您依業務單位和管道分配預算。 計畫�
 
 ## 建置計畫
 
-若要建立計畫，請使用Mix Modeler計畫建立精靈。 如需詳細資訊，請參閱[建置計畫](build.md)。
+若要建立計畫，請使用Marketing Campaign Analytics計畫建立精靈。 如需詳細資訊，請參閱[建置計畫](build.md)。
 
 
 ## 管理計畫
 
-若要檢視目前計畫的表格，請在Mix Modeler介面中：
+若要檢視目前計畫的表格，請在Marketing Campaign Analytics介面中：
 
 1. 從左側邊欄選取![](/help/assets/icons2/FileChart.svg) **[!UICONTROL Plans]**。
 
@@ -100,15 +112,15 @@ Mix Modeler中的計畫可讓您依業務單位和管道分配預算。 計畫�
 - 為計畫選取![更多](/help/assets/icons/More.svg)。 從內容功能表中選取&#x200B;**[!UICONTROL Duplicate]**。
 - 或者，在表格![SelectBox](/help/assets/icons/SelectBox.svg)中選取計畫，然後從藍色動作列選取![複製](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**。
 
-已建立新計畫，其名稱由附加了&#x200B;**[!UICONTROL (Copy)] (_n_)**&#x200B;的原始計畫名稱所組成。 系統會自動將您重新導向至[計畫建立](build.md)，以提供已複製計畫的更新詳細資料。
+已建立新計畫，其名稱由附加了&#x200B;**[!UICONTROL (Copy)](_n_)**&#x200B;的原始計畫名稱所組成。 系統會自動將您重新導向至[計畫建立](build.md)，以提供已複製計畫的更新詳細資料。
 
 - 來自原始計畫的明細（如說明、預算等）會複製過來。
 - 原始計畫的預算限制會複製到新建立的計畫。
 - 您可以選擇選取其他模型作為複製計畫的基礎。
-   - 對於存在於複製計畫中但不存在於新選取模型中的接觸點或管道，會從計畫中移除這些接觸點或管道的任何限制。
-   - 對於不在複製計畫中但存在於新選取模型中的接觸點或通道，限制會設定為：
-      - 最小值為`0`，
-      - 符合計畫小眾測試版範圍預算的最大值。
+  - 對於存在於複製計畫中但不存在於新選取模型中的接觸點或管道，會從計畫中移除這些接觸點或管道的任何限制。
+  - 對於不在複製計畫中但存在於新選取模型中的接觸點或通道，限制會設定為：
+    - 最小值為`0`，
+    - 符合計畫小眾測試版範圍預算的最大值。
 
 
 
@@ -131,6 +143,6 @@ Mix Modeler中的計畫可讓您依業務單位和管道分配預算。 計畫�
 
 1. 選取多個計畫。
 1. 從藍色動作列中，選取![刪除](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;以刪除計畫。
-1. 在&#x200B;**[!UICONTROL Delete *x *計畫]**&#x200B;確認對話方塊中選取&#x200B;**[!UICONTROL Delete]**&#x200B;以刪除計畫。 選取&#x200B;**[!UICONTROL Cancel]**&#x200B;以取消。
+1. 在&#x200B;**[!UICONTROL Delete *x *計畫]**確認對話方塊中選取&#x200B;**[!UICONTROL Delete]**以刪除計畫。 選取&#x200B;**[!UICONTROL Cancel]**以取消。
 
 

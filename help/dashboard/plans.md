@@ -1,13 +1,13 @@
 ---
 title: 計畫績效
-description: 瞭解如何在Mix Modeler中使用效能來規劃概觀。
+description: 瞭解如何在Marketing Campaign Analytics中使用效能來規劃概觀。
 feature: Dashboard, Plans, Models
 exl-id: 930fc1d5-8e28-4610-af7b-c4ec91f86a8a
 autotag-review: '2026-05-01T09:20:18.412Z'
-TQID: 'https://experienceleague.adobe.com/iRFbGXoCx5jzg6ATId2tNLTfyigoTzD4JQIqlPU5isU'
+TQID: 'https://experienceleague.adobe.com/wz2IEd-oBB8N-BSAdXMkcz9xS0xn7l4FlRJoBaQcCAw'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
     internal-label: Plans
@@ -29,18 +29,27 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 ---
 # 計畫績效
 
+{{mm-mca-rebranding}}
+
 >[!NOTE]
 >
->Mix Modeler ![首頁](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative}索引標籤是測試版功能，其功能可能會有所變更。 此功能僅供有限數量的客戶使用。
+>Marketing Campaign Analytics ![首頁](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative}索引標籤是測試版功能，其功能可能會有所變更。 此功能僅供有限數量的客戶使用。
 
-Mix Modeler ![首頁](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Plans]** [!BADGE Beta]{type=Informative}索引標籤提供追蹤儀表板，可監視行銷針對計畫的執行成效。 您可以透過狀態卡和視覺效果追蹤實際績效與計畫績效。
+Marketing Campaign Analytics ![首頁](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x200B;中的&#x200B;**[!UICONTROL Plans]** [!BADGE Beta]{type=Informative}索引標籤提供追蹤儀表板，可監視行銷針對計畫的執行成效。 您可以透過狀態卡和視覺效果追蹤實際績效與計畫績效。
 
 儀表板可協助您識別差距、發現風險或機會，並及時調整您的計畫和預算。
 
@@ -143,7 +152,7 @@ Mix Modeler ![首頁](/help/assets/icons/Home.svg) **[!UICONTROL Overview]**&#x2
 1. 選取![編輯](/help/assets/icons/Edit.svg)以開啟&#x200B;**[!UICONTROL Edit data]**&#x200B;對話方塊。
 1. 您可以根據視覺效果變更：
 
-   * 一或兩個量度：從&#x200B;**[!UICONTROL Select metric]**&#x200B;下拉式選單中選取量度。
+   * 一或兩個量度：從&#x200B;**[!UICONTROL Select metric]**&#x200B;下拉式功能表中選取量度。
 
      * 對於以ROI為基礎的計畫，選項包括： [!UICONTROL Conversions]、[!UICONTROL CPA]、[!UICONTROL Revenue]、[!UICONTROL ROI]、[!UICONTROL Spend]和[!UICONTROL Volume]。
      * 對於以CPA為基礎的計畫，選項為： [!UICONTROL Conversions]、[!UICONTROL CPA]、[!UICONTROL Spend]和[!UICONTROL Volume]。
