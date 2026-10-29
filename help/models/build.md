@@ -2,7 +2,7 @@
 title: 在Marketing Campaign Analytics中建立模型
 description: 瞭解如何在Marketing Campaign Analytics中建立模型，包括如何設定、設定和指定模型的進階選項。 例如轉換目標、接觸點、Adstock和排程。
 feature: Models
-solution: Mix Modeler
+solution: Marketing Campaign Analytics
 exl-id: e1093c09-1e23-460b-92de-cfb0061112fd
 TQID: 'https://experienceleague.adobe.com/cFNaPV6-R3d5ogcBfOyEVNqJoIvfg2JBzVeedjrtEq4'
 product_v2:
@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 67f7acd32f3456e71dbea0baf147bf2dc1e01980
+source-git-commit: 803bbfb863f55ef5d043c1e1592acd8c6d4bab44
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 7%
@@ -294,7 +294,7 @@ ht-degree: 7%
 
 為精細增量報告選取的協調欄位可作為Experience Platform [結構描述](/help/ingest-data/schemas.md)和[資料集](/help/ingest-data/datasets.md)的一部分，這些資料來自對模型計分。 在&#x200B;**[!UICONTROL conversionPassthrough]**&#x200B;和&#x200B;**[!UICONTROL touchpointPassthrough]**&#x200B;物件中可以找到精細見解報告欄位。
 
-針對已啟用精細增量報告的模型，在結構描述中擷取conversionPassthrough和touchpointPassthrough物件的熒幕擷圖![&#128279;](/help/assets/schema-granular-insights-reporting.png)
+針對已啟用精細增量報告的模型，在結構描述中擷取conversionPassthrough和touchpointPassthrough物件的熒幕擷圖](/help/assets/schema-granular-insights-reporting.png)![
 
 
 ## 完成
