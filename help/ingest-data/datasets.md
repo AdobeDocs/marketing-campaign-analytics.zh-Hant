@@ -42,7 +42,7 @@ ht-degree: 27%
 
 1. 選取&#x200B;**[!UICONTROL SETUP]**&#x200B;底下的![資料](/help/assets/icons/Data.svg) **[!UICONTROL Datasets]**。
 
-如需詳細資訊，請參閱[資料集使用者介面指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en)。
+如需詳細資訊，請參閱[資料集使用者介面指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hant)。
 
 >[!MORELIKETHIS]
 >
