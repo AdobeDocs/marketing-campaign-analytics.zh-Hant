@@ -1,14 +1,19 @@
 ---
-title: Mix Modeler深入探討
-description: 探索Adobe Mix Modeler背後的技術方法，包括多重接觸歸因、行銷組合模型、轉移學習和預算最佳化。
+title: Marketing Campaign Analytics深入探討
+description: 探索Adobe Marketing Campaign Analytics背後的技術方法，包括多重接觸歸因、行銷組合模型、轉移學習和預算最佳化。
 feature: Administration
 hide: true
+TQID: 'https://experienceleague.adobe.com/vIeES6bmdXOt6GIEA5Mt--IbyJ5g64kf-gyb6oEK0Ro'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
   - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
     internal-label: Marketing touch attribution
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
@@ -24,23 +29,41 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2853'
 ht-degree: 0%
 ---
 
 # 深度剖析
 
 
-Adobe Mix Modeler是一個統一的AI/ML支援測量平台，結合多重接觸歸因(MTA)和行銷組合模型(MMM)，提供準確、可擴充且符合未來需求的行銷見解。 本文詳細分析Mix Modeler背後的方法、設計選擇和技術創新。 並且是以[此2025年峰會研討會](https://business.adobe.com/tw/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}為基礎，其中詳細劃分了Mix Modeler背後的方法、設計選擇和技術創新。
+Adobe Marketing Campaign Analytics是一個統一的AI/ML支援測量平台，結合多重接觸歸因(MTA)和行銷組合模型(MMM)，提供準確、可擴充且符合未來需求的行銷見解。 本文詳細分析Marketing Campaign Analytics背後的方法、設計選擇和技術創新。 並且是以[此2025年峰會研討會](https://business.adobe.com/tw/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}為基礎，其中詳細劃分了Marketing Campaign Analytics背後的方法、設計選擇和技術創新。
 
-隨著行銷複雜性增加，傳統的測量方式已不盡如人意。 資料零散、不斷演變的隱私許可權制，以及速度和嚴格性的需求，都使得我們有必要重新思考如何評估行銷績效。 Adobe的回應是Mix Modeler：一種整合系統，使用機器學習來綜合多個資料來源並將範例化成有凝聚力的策略。
+隨著行銷複雜性增加，傳統的測量方式已不盡如人意。 資料零散、不斷演變的隱私許可權制，以及速度和嚴格性的需求，都使得我們有必要重新思考如何評估行銷績效。 Adobe的回應是Marketing Campaign Analytics：一種整合系統，使用機器學習來綜合多個資料來源並將範例化成有凝聚力的策略。
 
 
 >[!TIP]
 >
->Mix Modeler的主要優點之一，是行銷人員可存取該解決方案。 此應用程式透過簡單易用的介面（不需要資料科學背景）簡化了資料科學的複雜性。 如果您有興趣深入探討，本文會探討開發Mix Modeler時所做的技術選擇。 本文假設您已熟悉（進階）資料科學概念。
+>Marketing Campaign Analytics的主要優點之一，是行銷人員可存取該解決方案。 此應用程式透過簡單易用的介面（不需要資料科學背景）簡化了資料科學的複雜性。 如果您有興趣深入探討，本文會探討開發Marketing Campaign Analytics時所做的技術選擇。 本文假設您已熟悉（進階）資料科學概念。
 
 本文會更詳細地說明基本元件。 這些基本元件包括：
 
@@ -55,7 +78,7 @@ Adobe Mix Modeler是一個統一的AI/ML支援測量平台，結合多重接觸�
 
 ### 概觀
 
-支援Mix Modeler的多點觸控歸因(MTA)模型是根據事件層級資料訓練的分散時間存活模型。 資料包括搜尋、點按、產品檢視、新增到購物車和結帳。 此模型會使用監督式學習，估計客戶歷程中每個步驟的條件式轉換機率。 該模型會考量轉換和非轉換的客戶歷程路徑，以評估不同的行銷接觸點在一段時間內影響客戶行為的方式。 非轉換路徑與轉換路徑一樣重要。 兩個路徑之間的對比有助於瞭解特定型別的行銷接觸點是否能有效推動轉換。 例如，如果某種型別的接觸點像出現在轉換路徑一樣出現在非轉換路徑上，該接觸點對轉換就沒有影響。 此行為與經常出現在轉換路徑而非非轉換路徑上的接觸點相反。
+支援Marketing Campaign Analytics的多點觸控歸因(MTA)模型是根據事件層級資料訓練的分散時間存活模型。 資料包括搜尋、點按、產品檢視、新增到購物車和結帳。 此模型會使用監督式學習，估計客戶歷程中每個步驟的條件式轉換機率。 該模型會考量轉換和非轉換的客戶歷程路徑，以評估不同的行銷接觸點在一段時間內影響客戶行為的方式。 非轉換路徑與轉換路徑一樣重要。 兩個路徑之間的對比有助於瞭解特定型別的行銷接觸點是否能有效推動轉換。 例如，如果某種型別的接觸點像出現在轉換路徑一樣出現在非轉換路徑上，該接觸點對轉換就沒有影響。 此行為與經常出現在轉換路徑而非非轉換路徑上的接觸點相反。
 
 ![事件層級資料](/help/assets/event-level-data.png)
 
@@ -106,7 +129,7 @@ Adobe Mix Modeler是一個統一的AI/ML支援測量平台，結合多重接觸�
 
 ### 優點
 
-為Mix Modeler選取的多點觸控歸因方法有幾個主要優勢。
+為Marketing Campaign Analytics選取的多點觸控歸因方法有幾個主要優勢。
 
 * 會考慮轉換和非轉換路徑，因此可確保更準確地估計真正的媒體影響。
 * 合併管理股票並降低回報率，以模型化關鍵的實際客戶行為，並避免常用於規則型模型的過度簡化假設。
@@ -114,12 +137,12 @@ Adobe Mix Modeler是一個統一的AI/ML支援測量平台，結合多重接觸�
 * 支援直覺式接觸點歸因，允許與其他方法（例如隱藏馬爾可夫模型）相反的清晰解釋。
 * 相較於其他分類演演算法，提供強大的效能和高預測準確性。
 
-Mix Modeler為多重接觸歸因所產生之見解提供[行銷人員友善介面](/help/models/insights.md#attribution)。
+Marketing Campaign Analytics為多重接觸歸因所產生之見解提供[行銷人員友善介面](/help/models/insights.md#attribution)。
 
 ![模型歸因深入分析](/help/assets/model-insights-attribution.png)
 
 
-雖然多重接觸歸因提供所有這些優點，Mix Modeler不完全仰賴事件層級資料的轉換深入分析。 行銷組合模型是另一個將彙總層級資料納入考量的基礎元件。
+雖然多重接觸歸因提供所有這些優點，Marketing Campaign Analytics不完全仰賴事件層級資料的轉換深入分析。 行銷組合模型是另一個將彙總層級資料納入考量的基礎元件。
 
 ## 行銷組合模型(MMM)
 
@@ -177,7 +200,7 @@ Mix Modeler為多重接觸歸因所產生之見解提供[行銷人員友善介�
 * 時變的影響，相同程度的行銷投資在不同時間會因為外部因素而帶來不同的回報。
 * 預期市場狀況或基準波動有助於隨時間提供預算配置資訊的跨時間預算建議。
 
-Mix Modeler提供[行銷人員友善介面](/help/models/insights.md#attribution)，以利行銷組合模型化產生的各種深入分析。 例如，因子貢獻劃分會顯示可歸因於模型中所包含各種因子的基本轉換比例。
+Marketing Campaign Analytics提供[行銷人員友善介面](/help/models/insights.md#attribution)，以利行銷組合模型化產生的各種深入分析。 例如，因子貢獻劃分會顯示可歸因於模型中所包含各種因子的基本轉換比例。
 
 
 ![因子貢獻劃分](/help/assets/factors-example.png)
@@ -212,7 +235,7 @@ Mix Modeler提供[行銷人員友善介面](/help/models/insights.md#attribution
 
 ## 轉移學習
 
-除了多接觸點歸因和行銷組合模型化之外，實驗也是解決行銷測量問題的另一個重要支柱。 雖然實驗並未在Mix Modeler的框架內實作，但您可以使用實驗（例如在某些市場關閉行銷）來瞭解行銷對銷售額的因果影響。
+除了多接觸點歸因和行銷組合模型化之外，實驗也是解決行銷測量問題的另一個重要支柱。 雖然實驗並未在Marketing Campaign Analytics的框架內實作，但您可以使用實驗（例如在某些市場關閉行銷）來瞭解行銷對銷售額的因果影響。
 
 Adobe建議並運用轉移學習，以混合來自多重接觸歸因、行銷組合模型、實驗和其他先前知識來源的深入分析。  這種混合方式可以描述為分層方式。 每個圖層都有間隙，以說明產生內聚模型的限制。 但是，如果以正確的方式棧疊圖層，則可以補償組合模型中的間隙。
 當您結合使用多重接觸歸因、行銷組合模型、實驗和先前的知識來源時，請套用此類比。 將這些元件混合在一起，使每個元件中的瑕疵量最小。
@@ -291,10 +314,10 @@ Adobe建議並運用轉移學習，以混合來自多重接觸歸因、行銷組
 
 ## 摘要
 
-Adobe Mix Modeler不僅僅是測量工具；Mix Modeler是決策支援引擎，其優勢包括：
+Adobe Marketing Campaign Analytics不僅僅是測量工具；Marketing Campaign Analytics是決策支援引擎，其優勢包括：
 
 * 以嚴謹的統計方式來模擬真實世界的複雜性
 * 整合多樣化的資料和模型正規化
 * 經得起未來考驗的架構，可因應資料淘汰趨勢
 
-可解性加上效能的結合，使得Mix Modeler成為Adobe資料導向行銷轉型的核心。 Mix Modeler可讓行銷團隊做出更快、更聰明、更一致的投資決策。
+可解性加上效能的結合，使得Marketing Campaign Analytics成為Adobe資料導向行銷轉型的核心。 Marketing Campaign Analytics可讓行銷團隊做出更快、更聰明、更一致的投資決策。

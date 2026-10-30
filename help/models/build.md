@@ -1,13 +1,13 @@
 ---
-title: 在Mix Modeler中建立模型
-description: 瞭解如何在Mix Modeler中建立模型，包括如何設定、設定和指定模型的進階選項。 例如轉換目標、接觸點、Adstock和排程。
+title: 在Marketing Campaign Analytics中建立模型
+description: 瞭解如何在Marketing Campaign Analytics中建立模型，包括如何設定、設定和指定模型的進階選項。 例如轉換目標、接觸點、Adstock和排程。
 feature: Models
-solution: Mix Modeler
+solution: Marketing Campaign Analytics
 exl-id: e1093c09-1e23-460b-92de-cfb0061112fd
 TQID: 'https://experienceleague.adobe.com/cFNaPV6-R3d5ogcBfOyEVNqJoIvfg2JBzVeedjrtEq4'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: e0abf868-dae2-4c1c-83e9-b21799232845
     internal-label: Datasets
@@ -32,22 +32,24 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d83e095cdcd2954b5c6cc5f4b3f32a26cf27ed9a
+source-git-commit: 803bbfb863f55ef5d043c1e1592acd8c6d4bab44
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 9%
+source-wordcount: '1903'
+ht-degree: 7%
 ---
 # 建立模型
 
+{{mm-mca-rebranding}}
+
 為了建置您的自訂AI支援模型，介面會提供逐步引導模型設定流程。
 
-在[!DNL Mix Modeler]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;介面中，選取&#x200B;**[!UICONTROL Open model canvas]**。
+在[!DNL Marketing Campaign Analytics]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;介面中，選取&#x200B;**[!UICONTROL Open model canvas]**。
 
 ## 設定
 
 您在&#x200B;**[!UICONTROL Setup]**&#x200B;步驟中定義名稱和說明：
 
-1. 輸入您的模型&#x200B;**[!UICONTROL Name]**，例如`Demo model`。 輸入&#x200B;**[!UICONTROL Description]**，例如`Demo model to explore AI features of Mix Modeler`。
+1. 輸入您的模型&#x200B;**[!UICONTROL Name]**，例如`Demo model`。 輸入&#x200B;**[!UICONTROL Description]**，例如`Demo model to explore AI features of Marketing Campaign Analytics`。
 
    ![模型名稱和描述](/help/assets/model-name-description.png)
 
@@ -61,7 +63,12 @@ ht-degree: 9%
 >abstract="行銷接觸點為收件者、個體和/或 cookie 層級的行銷事件，用於評估行銷投資對數值型或收入型轉換的影響。<br/><br/>您無法使用具有重疊資料的接觸點來設定模型，而且必須至少有一個具有花費的接觸點。"
 
 
-您在&#x200B;**[!UICONTROL Configure]**&#x200B;步驟中設定您的模型。 設定涉及轉換目標的定義、行銷接觸點、合格的資料母體、外部和內部因素等。
+您在&#x200B;**[!UICONTROL Configure]**&#x200B;步驟中設定您的模型。 設定涉及啟用完整的funnel模型、定義轉換目標、行銷接觸點、合格的資料母體、外部和內部因素等。
+
+1. 如果您想要啟用[完整的funnel模型](./overview.md#full-funnel-modeling)，請在&#x200B;**[!UICONTROL Full funnel model]**&#x200B;區段中：
+
+   1. 選擇「**[!UICONTROL Enable full funnel modeling]**」。
+   1. 從&#x200B;**[!UICONTROL Upper funnel conversion]**&#x200B;下拉式功能表中選取上層轉換。
 
 1. 在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;區段中：
 
@@ -115,21 +122,41 @@ ht-degree: 9%
 
    * 在容器之間選取&#x200B;**And**&#x200B;和&#x200B;**Or**，為您的合格資料母體建置更複雜的定義。
 
-1. 您可以在&#x200B;**[!UICONTROL Factor dataset]**&#x200B;區段中管理包含內部或外部因子的資料集。
-
-   ![模型 — 因素資料集步驟](../assets/model-factors-dataset-step.png)
+1. 您可以在&#x200B;**[!UICONTROL Factor]**&#x200B;區段中管理包含內部或外部因子的資料集。
 
    * 若要新增因子資料集，請選取&#x200B;**[!UICONTROL Add Factor]**。 您最多可以新增30個因子至模型。
 
+     ![模型 — 因子步驟](../assets/model-factors-dataset-step.png)
+
      1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Factor dataset]**。 可用的因子是您已在[資料集規則](/help/harmonize-data/dataset-rules.md#create-a-dataset-rule)中定義協調欄位的因子。
+
         根據選取的資料集，**[!UICONTROL Factor type]**&#x200B;為&#x200B;**[!UICONTROL Internal]**&#x200B;或&#x200B;**[!UICONTROL External]**。
 
      1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Impact on conversion]**。 可用的選項包括： **[!UICONTROL Auto]**、**[!UICONTROL Positive]**&#x200B;或&#x200B;**[!UICONTROL Negative]**。 預設選項為&#x200B;**[!UICONTROL Auto]**，可讓模型判斷因子資料集的影響。
 
    * 若要刪除因子資料集，請選取![CrossSize200](/help/assets/icons/CrossSize400.svg)。
 
+   * 如果您的模型已啟用[完整的funnel模型](./overview.md#full-funnel-modeling)，則您必須為新增至模型的因子定義因果關係與因子因果關係。
+
+     ![模型 — 因素步驟funnel](../assets/model-factors-dataset-step-funnel.png)
+
+     * 若要定義因果關係，請在&#x200B;**[!UICONTROL Causal relationship]**&#x200B;的表格中，針對每個管道(**[!UICONTROL Source]**)選取![SelectBox](/help/assets/icons/SelectBox.svg)，以決定上層轉換KPI （在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Upper funnel conversion]**）與下層轉換KPI （在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Conversion]**）是否受管道影響。
+
+       您可以選取![SelectBox](/help/assets/icons/SelectBox.svg)上層轉換KPI和下層轉換KPI的欄標題，以快速定義所有管道都會影響KPI。
+
+     * 當您已定義因子時，您可以定義因子因果關係。 若要定義儀表盤因果關係，請在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表格中，針對每個因子(**[!UICONTROL Factor]**)選取![SelectBox](/help/assets/icons/SelectBox.svg)，以決定上層轉換KPI （在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Upper funnel conversion]**）與下層轉換KPI （在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Conversion]**）是否受該因子影響。
+
+       您可以選取![SelectBox](/help/assets/icons/SelectBox.svg)上層轉換KPI與下層轉換KPI的欄標題，以快速定義影響KPI的所有因素。
+
 
 1. 若要定義模型的回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中輸入介於`1`到`52`之間的值。
+
+   如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)：
+
+   * 若要定義下層funnel的回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中，輸入`1`到`52`之間的值。**[!UICONTROL Lower funnel]**
+
+   * 若要定義上層funnel的回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the upper funnel conversion]**&#x200B;中，輸入`1`到`52`之間的值。**[!UICONTROL Upper funnel]**
+
 
 1. 若要定義模型的訓練時段，請在&#x200B;**[!UICONTROL Define training window]**，選取您要開始評分轉換的位置。
 
@@ -137,7 +164,7 @@ ht-degree: 9%
 
    您可以選取：
 
-   * **[!UICONTROL Have Mix Modeler select a helpful training window]**&#x200B;和
+   * **[!UICONTROL Have Marketing Campaign Analytics select a helpful training window]**&#x200B;和
 
    * **[!UICONTROL Manually input a training window]**. 選取時，在&#x200B;**[!UICONTROL Include events the following years prior to a conversion]**&#x200B;中定義年數。
 
@@ -159,7 +186,14 @@ ht-degree: 9%
 
 在&#x200B;**[!UICONTROL Spend share]**&#x200B;區段中：
 
-* 若要在行銷資料稀疏時使用歷史行銷投資比率來通知模型，請啟動&#x200B;**[!UICONTROL Allow spend share]**。 建議使用此設定，尤其是在下列情況下：
+* 若要在行銷資料稀疏時使用歷史行銷投資比率來通知模型，請啟動&#x200B;**[!UICONTROL Allow spend share]**。
+
+  如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)：
+
+  * 若要在行銷資料稀疏時使用歷史行銷投資比率來通知模型，請啟動&#x200B;**[!UICONTROL Allow spend share for the lower funnel]**。
+  * 若要在行銷資料稀疏時使用歷史行銷投資比率來通知模型，請啟動&#x200B;**[!UICONTROL Allow spend share for the upper funnel]**。
+
+* 建議使用此設定，尤其是在下列情況下：
   * 管道沒有足夠的觀察值（例如支出、曝光或點按頻率低）。
   * 您正在模型化尖峰但一般且可能高花費的媒體（例如某些品牌的電視節目），這些媒體中的資料可能會很稀疏。
 
@@ -167,6 +201,8 @@ ht-degree: 9%
   >
   >對於一次性投資（例如超級碗廣告），將該資料納入為因素，而不是依賴支出份額。
   >
+
+
 
 ### MTA
 
@@ -182,6 +218,10 @@ ht-degree: 9%
 ![模型 — 先前知識](/help/assets/model-prior-knowledge-step.png)
 
 1. 選取&#x200B;**[!UICONTROL Rule type]**，預設為&#x200B;**[!UICONTROL Absolute values]**。
+
+1. 如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)：
+
+   * 從&#x200B;**[!UICONTROL Select metric]**&#x200B;選取&#x200B;**[!UICONTROL Lower funnel]**&#x200B;或&#x200B;**[!UICONTROL Upper funnel]**&#x200B;做為funnel量度，以供先前知識使用。
 
 1. 使用&#x200B;**[!UICONTROL Contribution proportion]**&#x200B;欄，為&#x200B;**[!UICONTROL Name]**&#x200B;底下列出的任何管道指定貢獻百分比。
 
@@ -201,6 +241,8 @@ ht-degree: 9%
 ![管道adstock](/help/assets/channel-ad-stock.png)
 
 若要設定頻道Adstock：
+
+* 如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)，請從&#x200B;**[!UICONTROL Select metric]**&#x200B;選取&#x200B;**[!UICONTROL Lower funnel]**&#x200B;或&#x200B;**[!UICONTROL Upper funnel]**&#x200B;作為用於管道adstock的funnel量度。
 
 * 對於每個管道(**[!UICONTROL Name]**)，定義&#x200B;**[!UICONTROL Lag (weeks)]**、**[!UICONTROL Min Lookback (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Max Lookback (weeks)]**&#x200B;值。 針對每個值：
 
@@ -231,7 +273,7 @@ ht-degree: 9%
 
    * **[!UICONTROL Daily]**：輸入有效的時間（例如`05:22 pm`）或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
    * **[!UICONTROL Weekly]**：選取一週的某天，然後輸入有效的時間（例如`05:22 pm`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
-   * **[!UICONTROL Monthly]**：從[在每個下拉式功能表上執行]選取一個月的某天，並輸入有效的時間（例如`05:22 pm`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
+   * **[!UICONTROL Monthly]**：從[在每個執行]下拉式功能表中選取一個月中的某天，然後輸入有效的時間（例如`05:22 pm`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
 
 1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 

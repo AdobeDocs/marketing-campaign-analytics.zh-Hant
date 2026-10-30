@@ -1,29 +1,37 @@
 ---
 title: 結構描述
-description: 瞭解如何管理將資料擷取至Mix Modeler所需的結構描述。
+description: 瞭解如何管理將資料擷取至Marketing Campaign Analytics所需的結構描述。
 feature: Schemas
 exl-id: 08289581-5af9-4422-b049-8c24105e2a8e
-TQID: https://experienceleague.adobe.com/E41pnyBetoLPOOulNmKh033myMvfF4bV9A2Xd3FXqcs
+autotag-review: '2026-05-01T08:56:54.552Z'
+TQID: 'https://experienceleague.adobe.com/GS91VDl1bmpHRPKVZTg6j-94nikFXXFHWLhoMoDWaw4'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T08:56:54.552Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: '618'
 ht-degree: 6%
-
 ---
-
 # 結構描述
 
-若要管理結構描述，請支援您要在Experience Platform中擷取並在Mix Modeler中使用的資料：
+{{mm-mca-rebranding}}
 
-1. 前往Mix Modeler介面。
+若要管理結構描述，請支援您要在Experience Platform中擷取並在Marketing Campaign Analytics中使用的資料：
+
+1. 前往Marketing Campaign Analytics介面。
 
 1. 選取&#x200B;**[!UICONTROL SETUP]**&#x200B;底下的![結構描述](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]**。
 
@@ -31,7 +39,7 @@ ht-degree: 6%
 
 ## 彙總或摘要資料
 
-強烈建議您使用XDM摘要量度類別，作為任何您要在Experience Platform中擷取並在Mix Modeler中使用的彙總或摘要資料之基礎的結構描述。
+強烈建議您使用XDM摘要量度類別，作為任何您要在Experience Platform中擷取並在Marketing Campaign Analytics中使用的彙總或摘要資料之基礎的結構描述。
 
 將「XDM摘要量度」類別用於：
 
@@ -97,7 +105,7 @@ ht-degree: 6%
 
 ## 支援的資料型別
 
-目前Mix Modeler不支援Experience Platform資料型別的子集。 下列基本資料型別（欄位）在[結構描述組合基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-type)中受到支援：
+目前Marketing Campaign Analytics不支援Experience Platform資料型別的子集。 下列基本資料型別（欄位）在[結構描述組合基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-type)中受到支援：
 
 - 字串
 - 整數
@@ -107,7 +115,7 @@ ht-degree: 6%
 - 短整數
 - 位元組
 - 日期
-- 日期時間
+- 日期-時間
 
 
 >[!MORELIKETHIS]

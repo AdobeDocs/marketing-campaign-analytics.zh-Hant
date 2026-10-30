@@ -1,16 +1,20 @@
 ---
 title: 模型深入分析
-description: 瞭解如何取得有關您模型的詳細資訊，例如Mix Modeler中的歷史總覽、模型見解和模型品質。
+description: 瞭解如何取得有關您模型的詳細資訊，例如Marketing Campaign Analytics中的歷史總覽、模型見解和模型品質。
 feature: Models
 exl-id: d99852f9-ba0d-4a2e-b5f3-ca0efe6002fd
-TQID: https://experienceleague.adobe.com/Ml1WZzjI8bruwu0xV5r6Y9DY34aZad-nMhUMoIObIow
 autotag-review: '2026-05-01T08:59:31.397Z'
+TQID: 'https://experienceleague.adobe.com/zoUwqJXQ0z2ttUwvF1cn5ukSvn8-Cxhpv5lXlWENkQo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
     internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
     internal-label: Model insights
@@ -20,16 +24,20 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 4c3c5548ced77cf84daf5cd8eb6708bfbc3dbb48
+source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
 workflow-type: tm+mt
-source-wordcount: '2951'
-ht-degree: 11%
+source-wordcount: '3099'
+ht-degree: 10%
 ---
 # 模型深入分析
+
+{{mm-mca-rebranding}}
 
 模型深入分析中的每個視覺效果都可協助您：
 
@@ -39,12 +47,11 @@ ht-degree: 11%
 
 這些見解可協助您支援資源優先順序和配置。
 
-若要檢視模型深入分析，請在[!DNL Mix Modeler]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;介面中：
+若要檢視模型深入分析，請在[!DNL Marketing Campaign Analytics]的![模型](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**&#x200B;介面中：
 
 1. 從&#x200B;**[!UICONTROL Models]**&#x200B;表格中，選取模型名稱，該模型的&#x200B;**[!UICONTROL Last run status]**&#x200B;為![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Success]**。
 
 1. 從內容功能表中，選取&#x200B;**[!UICONTROL Model Insights]**。
-
 
 
 可使用下列標籤：
@@ -55,6 +62,8 @@ ht-degree: 11%
 * [歸因](#attribution) （僅適用於啟用MTA的模型）
 * [診斷](#diagnostics)
 * [歷史總覽](#historical-overview)。
+
+如果已為模型啟用[完整funnel模型](./overview.md#full-funnel-modeling)，請從您要檢視模型深入分析的&#x200B;**[!UICONTROL Funnel stage]**&#x200B;下拉式功能表中選取funnel階段(**[!UICONTROL Upper funnel]**、**[!UICONTROL Lower funnel]**、**[!UICONTROL Full funnel]**)。
 
 您可以變更每個標籤上的視覺效果所根據的日期期間。 輸入日期期間或選取![行事曆](/help/assets/icons/Calendar.svg)以選取日期期間。
 
@@ -126,6 +135,25 @@ ht-degree: 11%
 
 * 從&#x200B;**[!UICONTROL Channel]**&#x200B;下拉式選單中選取管道，以更新特定管道的視覺效果。
 
+## funnel流程
+
+{{release-limited-testing-section}}
+
+如果為模型啟用了[完整funnel模型](./overview.md#full-funnel-modeling)，並且您已從Funnel Stage下拉式選單中選取「完整funnel」，則可使用Funnel流量視覺效果。
+
+>[!BEGINTABS]
+
+>[!TAB Funnel流程]
+
+![Funnel流程](/help/assets/model-funnel-flow.png)
+
+>[!TAB 暫留在funnel流程上]
+
+![計畫所有協同效應](/help/assets/model-funnel-flow-hover.png)
+
+>[!ENDTABS]
+
+將滑鼠指標暫留在任何流量上，就會看到快顯視窗，其中包含特定funnel流量的詳細資訊。
 
 ### 接觸點劃分
 
@@ -145,7 +173,7 @@ ht-degree: 11%
 | **[!UICONTROL Conversions]** | 日期範圍的轉換。 |
 | **[!UICONTROL Spend]** | 資料範圍的支出。 |
 
-若要選取特定頻道或所有頻道，請從「**[!UICONTROL View]**」下拉式選單中選取。
+若要選取特定管道或所有管道，請從「**[!UICONTROL View]**」下拉式選單中選取。
 
 若要下載接觸點劃分表格的內容，請選取![下載](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV]**。
 
@@ -163,16 +191,21 @@ ht-degree: 11%
 
 此次元架構提供相對協同強度現實的測量，因為此架構可說明訓練資料中的實際花費條件，因此可做出更明智的最佳化決策。
 
+如果為模型啟用[完整funnel模型](./overview.md#full-funnel-modeling)，您會看到上層funnel管道協同效益和下層funnel管道協同效益的視覺效果。
 
 >[!BEGINTABS]
 
->[!TAB 顯示較少的協同效應]
+>[!TAB 顯示較少的頻道協同效應]
 
-![計畫通路協同效應](/help/assets/model-channel-synergies-less.png)
+![規劃通路減少協同效應](/help/assets/model-channel-synergies-less.png)
 
->[!TAB 顯示所有協同效應]
+>[!TAB 顯示所有管道協同效應]
 
-![計畫通路協同效應](/help/assets/model-channel-synergies-all.png)
+![計畫所有協同效應](/help/assets/model-channel-synergies-all.png)
+
+>[!TAB Funnel協同效應]
+
+![規劃管道funnel協同效應](/help/assets/model-channel-synergies-funnel.png)
 
 >[!ENDTABS]
 
@@ -210,6 +243,7 @@ ht-degree: 11%
 
 >[!ENDTABS]
 
+* 如果為模型啟用了[完整funnel模型](./overview.md#full-funnel-modeling)，請從Funnel stage下拉式選單中選取「上funnel」或「下funnel」。
 * 若要顯示&#x200B;**[!UICONTROL All channels]**&#x200B;的Adstock視覺效果或個別管道（例如，**[!UICONTROL Paid Social Facebook]**）的Adstock視覺效果，請從&#x200B;**[!UICONTROL Channel]**&#x200B;下拉式選單中選取。
 
 
@@ -258,7 +292,7 @@ ht-degree: 11%
 
 支援下列歸因模型：
 
-* 根據[!DNL Mix Modeler]中選取的模型：
+* 根據[!DNL Marketing Campaign Analytics]中選取的模型：
   * 演演算法 — 受影響的
   * 演演算法 — 遞增式
 * 以規則為基礎：
@@ -268,13 +302,13 @@ ht-degree: 11%
   * 線性
   * U形
 
-請參閱[多點觸控歸因](../get-started/about.md#multi-touch-attribution)，瞭解[!DNL Mix Modeler]中的多點觸控歸因功能。
+請參閱[多點觸控歸因](../get-started/about.md#multi-touch-attribution)，瞭解[!DNL Marketing Campaign Analytics]中的多點觸控歸因功能。
 
 從&#x200B;**[!UICONTROL Attribution Model]**&#x200B;下拉式功能表中選取一或多個歸因模型。 所選的歸因模型會套用至「歸因」標籤中的所有視覺效果。
 
 ![歸因](/help/assets/model-insights-attribution.png)
 
-Mix Modeler多點接觸歸因精細事件分數與整體[!DNL Mix Modeler]分數和ROI相符。 這些分數也可在Experience Platform中作為資料集使用。
+Marketing Campaign Analytics多點接觸歸因精細事件分數與整體[!DNL Marketing Campaign Analytics]分數和ROI相符。 這些分數也可在Experience Platform中作為資料集使用。
 
 「歸因」標籤包含下列視覺效果：
 
@@ -420,8 +454,8 @@ Mix Modeler多點接觸歸因精細事件分數與整體[!DNL Mix Modeler]分數
   * **[!UICONTROL Training R<sup>2</sup>]**：表示模型預測所解釋的實際值中的變異比例，範圍從0到1。
   * **[!UICONTROL Training sMAPE]** （對稱平均絕對百分比錯誤）：測量訓練資料的平均百分比錯誤。 值越低表示準確度越高。
   * **[!UICONTROL Training RMSE]** （均方根錯誤）：測量訓練資料的平均百分比錯誤。 懲罰比MAPE更大的錯誤。 RMSE越低，表示預測準確度越高，但對離群值卻很敏感。
-  * **[!UICONTROL Out-of-sample sMAPE]**：評估未檢視資料的百分比錯誤，平衡預測過高和過低。 有助於評估一般化。 目前，Mix Modeler會使用上一季的訓練資料做為保留組來評估錯誤百分比。
-  * **[!UICONTROL Out-of-sample RMSE]**：評估未檢視資料的百分比錯誤，平衡預測過高和過低。 協助評估一般化。 目前，[!DNL Mix Modeler]使用上一季的訓練資料做為保留組來評估百分比錯誤。 RMSE會懲罰比MAPE更大的錯誤。
+  * **[!UICONTROL Out-of-sample sMAPE]**：評估未檢視資料的百分比錯誤，平衡預測過高和過低。 有助於評估一般化。 目前，Marketing Campaign Analytics會使用上一季的訓練資料做為保留組來評估錯誤百分比。
+  * **[!UICONTROL Out-of-sample RMSE]**：評估未檢視資料的百分比錯誤，平衡預測過高和過低。 協助評估一般化。 目前，[!DNL Marketing Campaign Analytics]使用上一季的訓練資料做為保留組來評估百分比錯誤。 RMSE會懲罰比MAPE更大的錯誤。
 
 
 * **[!UICONTROL Touchpoint effectiveness]**&#x200B;表格，代表Attribution AI演演算法模型的結果。
@@ -441,7 +475,7 @@ Mix Modeler多點接觸歸因精細事件分數與整體[!DNL Mix Modeler]分數
 
 >[!AVAILABILITY]
 >
->本節所述的功能處於發行的有限測試階段，可能尚未在您的環境中提供。 當功能正式可用時，會移除此附註。 如需[!DNL Mix Modeler]發行流程的詳細資訊，請參閱[Mix Modeler功能發行](/help/releases/latest.md)。
+>本節所述的功能處於發行的有限測試階段，可能尚未在您的環境中提供。 當功能正式可用時，會移除此附註。 如需[!DNL Marketing Campaign Analytics]發行流程的詳細資訊，請參閱[Marketing Campaign Analytics功能發行](/help/releases/latest.md)。
 >
 
 如果偵測到模型漂移，您會在頂端看到&#x200B;**[!UICONTROL Model drift detected]**&#x200B;通知。

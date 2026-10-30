@@ -3,25 +3,36 @@ title: 訓練模型並為其評分
 description: 瞭解如何訓練模型並為其評分。
 feature: Models
 exl-id: c4fbe13e-4548-421b-ba90-274fc42f4be2
-TQID: https://experienceleague.adobe.com/yHi6d-zZeT5fpedJeqNAj-Q01NlEK-y3MybA5p54DhE
 autotag-review: '2026-05-01T09:03:34.273Z'
+TQID: 'https://experienceleague.adobe.com/mvt9xE7FRLCEa9mD52LgW6bIJfHJMUd1cC4ipuebAhQ'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 374
-ht-degree: 0%
-
+source-wordcount: '368'
+ht-degree: 2%
 ---
-
 # 訓練模型並為其評分
+
+{{mm-mca-rebranding}}
 
 在您[建立](/help/models/build.md)模型後，模型會自動接受訓練並評分。 您可以手動重新訓練或重新核心模型。
 
@@ -39,7 +50,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Train model with last 2 years of marketing data]**，或
    * **[!UICONTROL Train model using specific date range of data]**.
-指定日期範圍。 您可以使用![行事曆](/help/assets/icons/Calendar.svg)來選取日期範圍。 您至少必須選取一年內的資料範圍。
+     指定日期範圍。 您可以使用![行事曆](/help/assets/icons/Calendar.svg)來選取日期範圍。 您至少必須選取一年內的資料範圍。
 
    ![重新訓練模型](../assets/retrain-model.png)
 
@@ -69,7 +80,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Score new marketing data from *mm/dd/yyyy *]**，使用新的行銷資料逐步為您的模型評分，或
    * **[!UICONTROL Score specific date range of marketing data]**&#x200B;以針對特定日期範圍重新核心。
-指定日期範圍。 您可以使用![行事曆](/help/assets/icons/Calendar.svg)來選取日期範圍。
+     指定日期範圍。 您可以使用![行事曆](/help/assets/icons/Calendar.svg)來選取日期範圍。
 
    ![重新核心模型](../assets/rescore-model.png)
 

@@ -1,33 +1,44 @@
 ---
 title: 擷取資料概觀
-description: 瞭解如何將資料擷取至Mix Modeler。
+description: 瞭解如何將資料擷取至Marketing Campaign Analytics。
 feature: Datasets, Event Datasets, Summary Datasets, Aggregate Datasets
 exl-id: dc16a601-bbd9-467b-8a7e-c32654d4069a
-TQID: https://experienceleague.adobe.com/XPr8Av7skzHBYoU6WtNw8PtHFrPH-MokICrLwoB2-J0
+autotag-review: '2026-05-01T09:11:34.506Z'
+TQID: 'https://experienceleague.adobe.com/bCjm1mvGkSSpD6oke4baWwZftqjyjv4u-1sBDtOYsJY'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: ad7101f7-ae92-401b-a25a-d3060d42989d
+    internal-label: Aggregate datasets
   - id: d1167c89-f64a-42ca-ac95-1d91b7790df2
+    internal-label: Summary datasets
   - id: ee1bf083-e090-4def-936b-c111d29f42d0
+    internal-label: Ingest data
   - id: a4dc3e7d-bd07-4ac8-8e49-ff2e8fecf1e7
+    internal-label: Event datasets
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:11:34.506Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 14%
-
+source-wordcount: '592'
+ht-degree: 17%
 ---
-
 # 擷取資料概觀
 
-Mix Modeler可處理來自不同圍牆花園的事件層級資料、彙總或摘要行銷成果資料。 以及來自任何其他來源（例如離線廣告、內部因素或外部因素）的彙總或摘要資料。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics可處理來自不同圍牆花園的事件層級資料、彙總或摘要行銷成果資料。 以及來自任何其他來源（例如離線廣告、內部因素或外部因素）的彙總或摘要資料。
 
 客戶可以使用擷取到Experience Platform中的任何型別的資料做為資料集，而且這些資料是根據以XDM ExperienceEvent或XDM摘要量度為基底類別的結構描述。
 
@@ -38,11 +49,11 @@ Mix Modeler可處理來自不同圍牆花園的事件層級資料、彙總或摘
 * 從封閉花園（如Facebook、YouTube）、流量來源或離線廣告資料彙總或摘要資料。
 * 包含對模型建立有用的內部或外部因素的非行銷彙總或摘要資料。
 
-您可以使用Experience Platform支援的任何一種機制，從其他來源擷取體驗事件層級、彙總行銷成果資料和資料。 例如Experience Platform SDK、API、來源聯結器，以及串流和批次擷取。 若要進一步瞭解如何在Experience Platform擷取資料以用於Adobe Mix Modeler，請參閱[資料擷取概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/home)。
+您可以使用Experience Platform支援的任何一種機制，從其他來源擷取體驗事件層級、彙總行銷成果資料和資料。 例如Experience Platform SDK、API、來源聯結器，以及串流和批次擷取。 若要進一步瞭解如何在Experience Platform擷取資料以用於Adobe Marketing Campaign Analytics，請參閱[資料擷取概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/home)。
 
 ## 准則
 
-若要將資料擷取至Experience Platform以與Mix Modeler搭配使用，請遵循下列准則：
+若要將資料擷取至Experience Platform以與Marketing Campaign Analytics搭配使用，請遵循下列准則：
 
 * 新增到資料集的增量資料中不應有任何重疊。
 * 來自單一來源的所有資料應該具有相同的詳細程度。
@@ -52,7 +63,7 @@ Mix Modeler可處理來自不同圍牆花園的事件層級資料、彙總或摘
 
 ## 範例
 
-除了較標準的體驗事件資料外，以下提供Mix Modeler中通常使用的一些資料範例。
+除了較標準的體驗事件資料外，以下提供Marketing Campaign Analytics中通常使用的一些資料範例。
 
 +++ 彙總行銷成果資料
 
@@ -94,12 +105,12 @@ Mix Modeler可處理來自不同圍牆花園的事件層級資料、彙總或摘
 
 +++
 
-若要在Mix Modeler中處理資料，您需要在資料集中收集資料，並仿照Experience Platform中的結構描述建模。 Mix Modeler介面可讓您輕鬆存取Experience Platform結構描述和資料集UI。
+若要在Marketing Campaign Analytics中處理資料，您需要在資料集中收集資料，並仿照Experience Platform中的結構描述建模。 Marketing Campaign Analytics介面可讓您輕鬆存取Experience Platform結構描述和資料集UI。
 
 
 ## 驗證
 
-若要驗證您的資料在Mix Modeler中是否正確可用，您可以進行下列工作：
+若要驗證您的資料在Marketing Campaign Analytics中是否正確可用，您可以進行下列工作：
 
 * 在[概觀](/help/overview.md)中使用視覺效果。
 * 下載並檢查協調資料集中[協調的資料](/help/harmonize-data/overview.md)中的資料。

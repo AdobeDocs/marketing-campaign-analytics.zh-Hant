@@ -1,38 +1,55 @@
 ---
 title: 模型概述
-description: 瞭解如何在Mix Modeler中建立、訓練、評分及管理機器學習模型，以測量及預測行銷結果。
+description: 瞭解如何在Marketing Campaign Analytics中建立、訓練、評分及管理機器學習模型，以測量及預測行銷結果。
 feature: Models
 exl-id: c43d9bc9-4429-45c2-9247-bd24510a24be
-TQID: https://experienceleague.adobe.com/2EmrUfSObFMDb0rNRG1OWqU8c2P9Dp1nf1y8-SpEY3k
 autotag-review: '2026-05-01T08:59:10.903Z'
+TQID: 'https://experienceleague.adobe.com/T37YTKQlT1mUIfGkJwQkLLGkP0WfTs6jUbZpskPUHgo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a234aebd-3855-4376-a64d-29b38411e0c5
+    internal-label: Marketing mix modeling
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
+    internal-label: Model insights
   - id: c89e26b6-808d-4500-8b01-450a63466999
+    internal-label: Build model
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Machine learning
+source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
 workflow-type: tm+mt
-source-wordcount: 1082
+source-wordcount: '1284'
 ht-degree: 0%
-
 ---
-
 # 模型概觀
 
-Mix Modeler中的模型功能可讓您設定、訓練業務目標特定的模型，並為其評分。 訓練和評分可支援AI驅動的多點觸控歸因與行銷組合模型化之間的轉移學習。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics中的模型功能可讓您設定、訓練業務目標特定的模型，並為其評分。 訓練和評分可支援AI驅動的多點觸控歸因與行銷組合模型化之間的轉移學習。
 
 這些模型以您在應用程式工作流程中建立的協調資料為基礎。
 
-Mix Modeler中的模型是一種機器學習模型，用於根據行銷人員的投資來測量及預測指定的結果。 行銷接觸點和摘要層級資料可作為輸入使用。 Mix Modeler可讓您根據不同的變數集、維度和結果（例如收入、銷售量、銷售機會）建立模型的變體。
+Marketing Campaign Analytics中的模型是一種機器學習模型，用於根據行銷人員的投資來測量及預測指定的結果。 行銷接觸點和摘要層級資料可作為輸入使用。 Marketing Campaign Analytics可讓您根據不同的變數集、維度和結果（例如收入、銷售量、銷售機會）建立模型的變體。
 
 模型需要：
 
@@ -50,13 +67,29 @@ Mix Modeler中的模型是一種機器學習模型，用於根據行銷人員的
 
 模型首次建立時，建立作業會立即啟動訓練和評分程式。 初始訓練和評分回合完成後，模型深入分析便可供檢閱。 隨後可能會重新訓練模型。 此外，可能會將資料新增到模型，這需要您手動重新核心模型。 當新的發現和資訊出現時，需要重新訓練和重新搜尋，這是一個反複進行的過程，並且需要調整，才能獲得最適合您業務目標的模型。
 
+## 完整funnel模式
+
+{{release-limited-testing-section}}
+
+完整的funnel模型可讓您為其funnel的真實階段建立模型。 例如，從電子報註冊到購買。 完整funnel模型顯示行銷如何透過該funnel移動客戶。 完整funnel模型針對這些管道影響下游的轉換，提供上層funnel管道的評分，並協調結果，讓貢獻總計正確且沒有重複計算。
+
+您可使用完整的funnel模型，在上層funnel KPI及下層funnel KPI之間建立模型。
+
+* 上方funnel KPI的範例為電子報註冊及其他品牌知名度量度。
+* funnel較低量度的範例為一般轉換量度，例如收入和訂單。
+
+在著重轉換的MMM模型中，上層funnel策略通常獲得較低的評價。 完整的funnel模型可協助您瞭解：
+
+* 哪些媒體和行銷策略促成funnel的上層目標。
+* 哪些媒體和行銷策略對轉換目標造成間接影響。 funnel模型上方的權重是下funnel模型的輸入，為相關的媒體和行銷策略提供較高的權重。
+
 ## 建立模型
 
-若要建立模型，請使用選取&#x200B;**[!UICONTROL Open model canvas]**&#x200B;時可用的Mix Modeler逐步引導模型組態流程。 如需詳細資訊，請參閱[建立模型](build.md)。
+若要建立模型，請使用選取&#x200B;**[!UICONTROL Open model canvas]**&#x200B;時可用的Marketing Campaign Analytics逐步引導模型組態流程。 如需詳細資訊，請參閱[建立模型](build.md)。
 
 ## 管理模型
 
-若要檢視目前模型的表格，請在Mix Modeler介面中：
+若要檢視目前模型的表格，請在Marketing Campaign Analytics介面中：
 
 1. 從左側邊欄選取![FileDataS2](/help/assets/icons2/FileData.svg) **[!UICONTROL Models]**。
 
@@ -66,8 +99,8 @@ Mix Modeler中的模型是一種機器學習模型，用於根據行銷人員的
 
    | 欄名稱 | 詳細資料 |
    |---|---|
-   | **[!UICONTROL Name]** | 模型名稱 |
-   | **[!UICONTROL Description]** | 模型說明 |
+   | **[!UICONTROL Name]** | 模型的名稱。 如果模型已啟用完整funnel模型化，您會看到[!BADGE 完整funnel]{type=Informative}頁面。 |
+   | **[!UICONTROL Description]** | 模型的說明。 |
    | **[!UICONTROL Conversion event]** | 您為模型選取的轉換。 |
    | **[!UICONTROL Run frequency]** | 訓練模型的執行頻率。 |
    | **[!UICONTROL Last run]** | 模型上次培訓的日期和時間。 |
@@ -124,7 +157,9 @@ Mix Modeler中的模型是一種機器學習模型，用於根據行銷人員的
 
 1. 從左側邊欄選取![FileData](/help/assets/icons/FileData.svg) **[!UICONTROL Models]**。
 
-1. 選取模型的![資訊](/help/assets/icons/Info.svg)，以顯示包含詳細資訊的快顯視窗。
+1. 選取模型的![資訊](/help/assets/icons/Info.svg)，以顯示包含&#x200B;**[!UICONTROL Description]**、**[!UICONTROL Run frequency]**、**[!UICONTROL Last run status]**、**[!UICONTROL Spend share]**&#x200B;等詳細資訊的快顯視窗。
+
+
 
 
 ### 複製
@@ -153,18 +188,18 @@ Mix Modeler中的模型是一種機器學習模型，用於根據行銷人員的
 
    * 若要啟用排程，請啟用&#x200B;**[!UICONTROL Enable schedule model training and scoring]**。 您只能為已訓練和評分的模型啟用排程。
 
-      1. 選取&#x200B;**[!UICONTROL Scoring frequency]**：
+     1. 選取&#x200B;**[!UICONTROL Scoring frequency]**：
 
-         * **[!UICONTROL Daily]**：輸入有效的時間（例如`10:00 am`）或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
-         * **[!UICONTROL Weekly]**：選取一週的某天，然後輸入有效的時間（例如`10:00 am`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
-         * **[!UICONTROL Monthly]**：從[在每個下拉式功能表上執行]選取一個月的某天，並輸入有效的時間（例如`10:00 am`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
+        * **[!UICONTROL Daily]**：輸入有效的時間（例如`10:00 am`）或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
+        * **[!UICONTROL Weekly]**：選取一週的某天，然後輸入有效的時間（例如`10:00 am`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
+        * **[!UICONTROL Monthly]**：從[在每個執行]下拉式功能表中選取一個月中的某天，然後輸入有效的時間（例如`10:00 am`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
 
-      1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
+     1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 
    * 若要更新&#x200B;**[!UICONTROL Granular Insights Reporting Fields]**&#x200B;區段中的[精細分析報告欄位](/help/models/build.md#granular-insights-reporting-fields)：
-      1. 從&#x200B;**[!UICONTROL Includes]**&#x200B;底下的&#x200B;**[!UICONTROL _選取協調欄位_]**&#x200B;中，選取一或多個協調欄位。 選取的協調欄位會新增至面板。
-      1. 選取&#x200B;**[!UICONTROL *協調欄位&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)，以從包含所選協調欄位的容器中移除協調欄位。
-      1. 選取&#x200B;**[!UICONTROL Clear all]**&#x200B;以移除所有選取的協調欄位。
+     1. 從&#x200B;**[!UICONTROL Includes]**&#x200B;底下的&#x200B;**[!UICONTROL _選取協調欄位_]**&#x200B;中，選取一或多個協調欄位。 選取的協調欄位會新增至面板。
+     1. 選取&#x200B;**[!UICONTROL *協調欄位&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)，以從包含所選協調欄位的容器中移除協調欄位。
+     1. 選取&#x200B;**[!UICONTROL Clear all]**&#x200B;以移除所有選取的協調欄位。
 
      >[!IMPORTANT]
      >任何在2026年1月12日之前建立且具有MTA的模型，都應複製以啟用精細的模型深入分析。<br/>

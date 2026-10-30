@@ -1,39 +1,51 @@
 ---
 title: 存取控制
-description: 瞭解如何在Mix Modeler中設定存取控制。
+description: 瞭解如何在Marketing Campaign Analytics中設定存取控制。
 feature: Administration
 exl-id: c9ec97d9-b9a2-41f5-8626-1cf967d5d7fe
-TQID: https://experienceleague.adobe.com/EoiF5ui2Bqq0Oxuv-s5E5pQclj9gnjoKgZ1bOzRK-vY
+autotag-review: '2026-05-01T09:20:37.287Z'
+TQID: 'https://experienceleague.adobe.com/ThO2ylnzexAPA1qczBJ5EEfHErHphVQ3XjXug71w6A0'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
+    internal-label: Administration
 subfeature_v2:
   - id: abe9e290-7d2f-4131-b71e-ef9900865044
+    internal-label: Access control
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-autotag-review: '2026-05-01T09:20:37.287Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 412
-ht-degree: 1%
-
+source-wordcount: '415'
+ht-degree: 3%
 ---
-
 # 存取控制
 
-Mix Modeler的存取控制是透過[Adobe Admin Console](https://adminconsole.adobe.com/)中的Experience Platform以及Experience Platform中的[許可權](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home#platform-permissions)提供。 此功能運用Admin Console中的產品設定檔，將使用者與許可權和沙箱連結。
+{{mm-mca-rebranding}}
+
+Marketing Campaign Analytics的存取控制是透過[Adobe Admin Console](https://adminconsole.adobe.com/)中的Experience Platform以及Experience Platform中的[許可權](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home#platform-permissions)提供。 此功能運用Admin Console中的產品設定檔，將使用者與許可權和沙箱連結。
 
 如需存取控制的詳細資訊，請參閱[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)。
 
 ## 角色型存取控制
 
-請參閱[管理](../main-guide/administration.md)，瞭解如何在Experience Platform中為Mix Modeler使用者和使用者群組設定角色型存取許可權。
+請參閱[管理](../main-guide/administration.md)，瞭解如何在Experience Platform中為Marketing Campaign Analytics使用者和使用者群組設定角色型存取許可權。
 
 ## 屬性型存取控制
 

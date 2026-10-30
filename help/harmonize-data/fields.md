@@ -1,28 +1,34 @@
 ---
 title: 協調的欄位
-description: 瞭解如何定義欄位，以便在Mix Modeler中協調資料時使用。
+description: 瞭解如何定義欄位，以便在Marketing Campaign Analytics中協調資料時使用。
 feature: Harmonized Data, Harmonized Fields
 exl-id: f051279a-1ae9-49bd-a946-abfc34c90413
-TQID: https://experienceleague.adobe.com/NlB6aA4AO-0Tpbb9SibgUz0eVUgs8roO9Mju2M8tl7s
+autotag-review: '2026-05-01T09:13:17.577Z'
+TQID: 'https://experienceleague.adobe.com/ZmBwgBCVOPCVJ1pdniya3RvjWagTQuLSQoxluuDQLbc'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
 subfeature_v2:
   - id: d4b8ba18-64c1-4413-be54-74405ec7f558
+    internal-label: Dataset mapping
   - id: b4655f7e-1a6e-4fa3-a7c5-3c34d4786e49
+    internal-label: Harmonized fields
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:13:17.577Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: '694'
 ht-degree: 11%
-
 ---
-
 # 協調的欄位
+
+{{mm-mca-rebranding}}
 
 協調的欄位可讓您為概念上相同的資料（源自不同的來源）定義欄位，每個欄位都有該資料自己的定義。 例如，您可以根據資料來源以不同方式定義和命名點按量度。 點按協調欄位可讓您根據點按資料的這些不同來源，為點按量度定義通用術語。
 
@@ -30,7 +36,7 @@ ht-degree: 11%
 
 ## 全球協調統一欄位
 
-Mix Modeler中預設可用的全域協調欄位為：
+Marketing Campaign Analytics中預設可用的全域協調欄位為：
 
 
 | 欄位名稱 | 顯示名稱 | 類別 | 資料類型 | 評論 |
@@ -65,7 +71,7 @@ Mix Modeler中預設可用的全域協調欄位為：
 
 ## 管理協調的欄位
 
-若要在Mix Modeler介面中檢視可用協調欄位的表格：
+若要在Marketing Campaign Analytics介面中檢視可用協調欄位的表格：
 
 1. 從左側邊欄選取![資料搜尋](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]**。
 
@@ -91,7 +97,7 @@ Mix Modeler中預設可用的全域協調欄位為：
 
 ### 新增協調欄位
 
-若要新增協調欄位，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
+若要新增協調欄位，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
 
 1. 選取![新增](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add field]**。
 
@@ -117,7 +123,7 @@ Mix Modeler中預設可用的全域協調欄位為：
 
 您只能編輯您先前建立的協調欄位（擁有者是使用者端）。 您無法編輯全域協調欄位。
 
-若要編輯協調的欄位，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
+若要編輯協調的欄位，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
 
 1. 選取您要編輯的協調欄位。 例如 **[!UICONTROL Region]**。
 
@@ -131,7 +137,7 @@ Mix Modeler中預設可用的全域協調欄位為：
 
 您只能刪除您先前建立的協調欄位（擁有者是使用者端）。 您無法刪除全球協調欄位。
 
-若要刪除協調欄位，請在Mix Modeler的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
+若要刪除協調欄位，請在Marketing Campaign Analytics的![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Fields]**&#x200B;介面中：
 
 1. 選取您要刪除的協調欄位，例如&#x200B;**[!UICONTROL Region]**。
 
