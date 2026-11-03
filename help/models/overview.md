@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: c75532d37a87f39cb61eabd58333b39895cf3a69
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1329'
 ht-degree: 0%
 ---
 # 模型概觀
@@ -49,7 +49,7 @@ Marketing Campaign Analytics中的模型功能可讓您設定、訓練業務目�
 
 這些模型以您在應用程式工作流程中建立的協調資料為基礎。
 
-Marketing Campaign Analytics中的模型是一種機器學習模型，用於根據行銷人員的投資來測量及預測指定的結果。 行銷接觸點和摘要層級資料可作為輸入使用。 Marketing Campaign Analytics可讓您根據不同的變數集、維度和結果（例如收入、銷售量、銷售機會）建立模型的變體。
+Marketing Campaign Analytics中的模型是一種機器學習模型，用於根據行銷投資來測量及預測指定的結果。 行銷接觸點和摘要層級資料可作為輸入使用。 Marketing Campaign Analytics可讓您根據不同的變數集、維度和結果（例如收入、銷售量、銷售機會）建立模型的變體。
 
 模型需要：
 
@@ -62,10 +62,10 @@ Marketing Campaign Analytics中的模型是一種機器學習模型，用於根�
 
 * 外部因素。
 * 內部因素。
-* 先前瞭解其他來源的行銷貢獻，例如過去的利害關係人經驗、逐步測試、其他模型。
+* 先前瞭解其他來源的行銷貢獻，例如過去的利害關係人經驗、增量測試、其他模型。
 * 支出份額，在行銷資料稀疏時，使用相對支出份額作為代理。
 
-模型首次建立時，建立作業會立即啟動訓練和評分程式。 初始訓練和評分回合完成後，模型深入分析便可供檢閱。 隨後可能會重新訓練模型。 此外，可能會將資料新增到模型，這需要您手動重新核心模型。 當新的發現和資訊出現時，需要重新訓練和重新搜尋，這是一個反複進行的過程，並且需要調整，才能獲得最適合您業務目標的模型。
+模型首次建立時，建立作業會立即啟動訓練和評分程式。 初始訓練和評分回合完成後，模型深入分析便可供檢閱。 模型隨後會重新訓練。 此外，將資料新增到模型時，需要手動重新核心模型。 當新的發現和資訊出現時，需要重新訓練和重新搜尋，這是一個反複進行的過程，並且需要調整，才能獲得最適合您業務目標的模型。
 
 ## 完整funnel模式
 
@@ -81,7 +81,7 @@ Marketing Campaign Analytics中的模型是一種機器學習模型，用於根�
 在著重轉換的MMM模型中，上層funnel策略通常獲得較低的評價。 完整的funnel模型可協助您瞭解：
 
 * 哪些媒體和行銷策略促成funnel的上層目標。
-* 哪些媒體和行銷策略對轉換目標造成間接影響。 funnel模型上方的權重是下funnel模型的輸入，為相關的媒體和行銷策略提供較高的權重。
+* 哪些媒體和行銷策略對轉換目標造成間接影響。 funnel模型上方的權重是下方funnel模型的輸入，以便給予相關的媒體和行銷策略較高的權重。
 
 ## 建立模型
 
@@ -108,7 +108,7 @@ Marketing Campaign Analytics中的模型是一種機器學習模型，用於根�
 
    若要以遞增![ArrowMoveUpS2](/help/assets/icons2/ArrowMoveUp.svg)或遞減![ArrowMoveDownS2](/help/assets/icons2/ArrowMoveDown.svg)的順序排序任何資料行的資料表，請選取資料行的標題。
 
-   若要排序或調整&#x200B;**[!UICONTROL Name]**&#x200B;資料行大小，請選取&#x200B;**[!UICONTROL Name]** ![V形](/help/assets/icons/ChevronDown.svg)。 從內容功能表選取&#x200B;**[!UICONTROL Sort ascending]**、**[!UICONTROL Sort descending]**&#x200B;或&#x200B;**[!UICONTROL Resize column]**。 或者，您可以將滑鼠停留在欄分隔符號上，以調整&#x200B;**[!UICONTROL Name]**&#x200B;欄的大小。
+   若要排序或調整&#x200B;**[!UICONTROL Name]**&#x200B;資料行大小，請選取&#x200B;**[!UICONTROL Name]** ![V形](/help/assets/icons/ChevronDown.svg)。 從內容功能表選取&#x200B;**[!UICONTROL Sort ascending]**、**[!UICONTROL Sort descending]**&#x200B;或&#x200B;**[!UICONTROL Resize column]**。 若要調整&#x200B;**[!UICONTROL Name]**&#x200B;欄的大小，請將游標停留在欄分隔符號上。
 
    模型的報告狀態取決於模型在其生命週期內的位置。 例如，模型是否建立、（重新）訓練成功與否，或（重新）評分成功與否。
 
@@ -195,6 +195,12 @@ Marketing Campaign Analytics中的模型是一種機器學習模型，用於根�
         * **[!UICONTROL Monthly]**：從[在每個執行]下拉式功能表中選取一個月中的某天，然後輸入有效的時間（例如`10:00 am`），或使用![時鐘](/help/assets/icons/Clock.svg)來定義時間。
 
      1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
+
+   * 如果已啟用完整funnel模型，則會顯示已停用的啟用完整funnel歸因。 您無法修改此設定。
+
+   * 若要[讓分數資料可供Customer Journey Analytics](build.md#customer-journey-analytics)使用，請選取&#x200B;**[!UICONTROL Enable scores for Customer Journey Analytics]**。
+
+     為Customer Journey Analytics啟用分數後，除非刪除模型，否則無法停用此設定。
 
    * 若要更新&#x200B;**[!UICONTROL Granular Insights Reporting Fields]**&#x200B;區段中的[精細分析報告欄位](/help/models/build.md#granular-insights-reporting-fields)：
      1. 從&#x200B;**[!UICONTROL Includes]**&#x200B;底下的&#x200B;**[!UICONTROL _選取協調欄位_]**&#x200B;中，選取一或多個協調欄位。 選取的協調欄位會新增至面板。

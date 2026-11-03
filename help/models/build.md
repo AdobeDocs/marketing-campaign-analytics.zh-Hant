@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 803bbfb863f55ef5d043c1e1592acd8c6d4bab44
+source-git-commit: 1b5be926bcc785602e9f722eae790f630b9564d4
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 7%
+source-wordcount: '2134'
+ht-degree: 8%
 ---
 # 建立模型
 
@@ -136,20 +136,20 @@ ht-degree: 7%
 
    * 若要刪除因子資料集，請選取![CrossSize200](/help/assets/icons/CrossSize400.svg)。
 
-   * 如果您的模型已啟用[完整的funnel模型](./overview.md#full-funnel-modeling)，則您必須為新增至模型的因子定義因果關係與因子因果關係。
+   * 如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)，則您必須為新增至模型的因子定義因果關係和因子因果關係。
 
      ![模型 — 因素步驟funnel](../assets/model-factors-dataset-step-funnel.png)
 
-     * 若要定義因果關係，請在&#x200B;**[!UICONTROL Causal relationship]**&#x200B;的表格中，針對每個管道(**[!UICONTROL Source]**)選取![SelectBox](/help/assets/icons/SelectBox.svg)，以決定上層轉換KPI （在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Upper funnel conversion]**）與下層轉換KPI （在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Conversion]**）是否受管道影響。
+     * 若要定義因果關係，請在&#x200B;**[!UICONTROL Causal relationship]**&#x200B;的表格中，選取每個管道(**[!UICONTROL Source]**)的![SelectBox](/help/assets/icons/SelectBox.svg)，以指出管道是否會影響上下轉換的KPI。
 
        您可以選取![SelectBox](/help/assets/icons/SelectBox.svg)上層轉換KPI和下層轉換KPI的欄標題，以快速定義所有管道都會影響KPI。
 
-     * 當您已定義因子時，您可以定義因子因果關係。 若要定義儀表盤因果關係，請在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表格中，針對每個因子(**[!UICONTROL Factor]**)選取![SelectBox](/help/assets/icons/SelectBox.svg)，以決定上層轉換KPI （在&#x200B;**[!UICONTROL Full funnel modeling]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Upper funnel conversion]**）與下層轉換KPI （在&#x200B;**[!UICONTROL Conversion goal]**&#x200B;區段中選取為&#x200B;**[!UICONTROL Conversion]**）是否受該因子影響。
+     * 當您已定義因子時，您可以定義因子因果關係。 若要定義因子因果關係，請在&#x200B;**[!UICONTROL Factor causal relationships]**&#x200B;表格中，為每個因子(**[!UICONTROL Factor]**)選取![SelectBox](/help/assets/icons/SelectBox.svg)，以指出因子是否會影響上下轉換重要績效指標。
 
-       您可以選取![SelectBox](/help/assets/icons/SelectBox.svg)上層轉換KPI與下層轉換KPI的欄標題，以快速定義影響KPI的所有因素。
+       您可以選取![SelectBox](/help/assets/icons/SelectBox.svg)上層轉換KPI與下層轉換KPI的欄標題，以快速定義所有影響KPI的因素。
 
 
-1. 若要定義模型的回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中輸入介於`1`到`52`之間的值。
+1. 若要定義模型回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the conversion]**&#x200B;中輸入介於`1`到`52`之間的值。
 
    如果您的模型已啟用[完整funnel模型](./overview.md#full-funnel-modeling)：
 
@@ -158,7 +158,7 @@ ht-degree: 7%
    * 若要定義上層funnel的回顧期間，請在&#x200B;**[!UICONTROL Define lookback window]**&#x200B;區段的&#x200B;**[!UICONTROL Give contribution credit to touchpoints occurring within]** ... **[!UICONTROL weeks prior to the upper funnel conversion]**&#x200B;中，輸入`1`到`52`之間的值。**[!UICONTROL Upper funnel]**
 
 
-1. 若要定義模型的訓練時段，請在&#x200B;**[!UICONTROL Define training window]**，選取您要開始評分轉換的位置。
+1. 若要定義模型的訓練時段，請在&#x200B;**[!UICONTROL Define training window]**&#x200B;選取開始評分轉換的位置。
 
    ![模型 — 定義訓練時段](/help/assets/model-define-training-window.png)
 
@@ -195,7 +195,7 @@ ht-degree: 7%
 
 * 建議使用此設定，尤其是在下列情況下：
   * 管道沒有足夠的觀察值（例如支出、曝光或點按頻率低）。
-  * 您正在模型化尖峰但一般且可能高花費的媒體（例如某些品牌的電視節目），這些媒體中的資料可能會很稀疏。
+  * 您正在模型化尖峰但一般且潛在高花費的媒體（例如某些品牌的電視節目），其中資料是稀疏的。
 
   >[!NOTE]
   >
@@ -234,7 +234,7 @@ ht-degree: 7%
 
 在&#x200B;**[!UICONTROL Channel adstock]**&#x200B;區段中，您可以針對您在模型中定義的每個管道（行銷管道），定義個別Adstock回顧（結轉或衰減效果）和延遲（延遲回應時間）。
 
-此管道Adstock設定可讓您更精確地控制不同行銷管道如何隨著時間影響業務結果。 或者，您也可以使用系統預設值和「一刀切」組態。
+此管道Adstock設定可讓您更精確地控制不同行銷管道如何隨著時間影響業務結果。 或者，您可以使用系統預設值和標準組態。
 
 頻道adstock設定可協助您擷取頻道特有的細微差別。 例如，電視促銷活動的長期影響、付費搜尋的短期影響，或影響者支出與可觀察的轉換之間的延遲。 使用Adstock回顧和延遲引數來實驗，產生更準確、量身打造且值得信賴的深入分析。 最終，管道Adstock設定可帶來更精確的預算分配和更好的業務決策。
 
@@ -246,7 +246,7 @@ ht-degree: 7%
 
 * 對於每個管道(**[!UICONTROL Name]**)，定義&#x200B;**[!UICONTROL Lag (weeks)]**、**[!UICONTROL Min Lookback (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Max Lookback (weeks)]**&#x200B;值。 針對每個值：
 
-  * 使用![加](/help/assets/icons/Add.svg)增加值，![減](/help/assets/icons/Subtract.svg)減少值，或手動輸入值。
+  * 若要增加值，請使用![加](/help/assets/icons/Add.svg)；若要減少值，請使用![減](/help/assets/icons/Subtract.svg)；或手動輸入值。
 
   每個管道的延遲周數加回顧周數上限為設定培訓時段的八分之一。 此上限可確保提供足夠的資料，讓模型能夠了解廣告滯後效應。 例如，對於兩年的訓練期間，管道的&#x200B;**[!UICONTROL Lag (weeks)]**&#x200B;和&#x200B;**[!UICONTROL Lookback (weeks)]**&#x200B;的上限為13週。 此上限會在您定義值時強制執行。
 
@@ -278,6 +278,38 @@ ht-degree: 7%
 1. 從下拉式功能表中選取&#x200B;**[!UICONTROL Training frequency]**： **[!UICONTROL Monthly]**、**[!UICONTROL Quarterly]**、**[!UICONTROL Yearly]**&#x200B;或&#x200B;**[!UICONTROL None]**。
 
 
+### Customer Journey Analytics {#cja}
+
+
+>[!CONTEXTUALHELP]
+>id="model_enable_cja"
+>title="啟用 Customer Journey Analytics"
+>abstract="若要讓分數資料可供Customer Journey Analytics用於報表和分析，請啟用此設定。 啟用後，您必須刪除模型才能停用此設定。"
+
+當您有權使用Customer Journey Analytics，且已在特定沙箱中為Marketing Campaign Analytics建立一或多個[資料集規則](/help/harmonize-data/dataset-rules.md)時：
+
+* 在您的Marketing Campaign Analytics沙箱中建立了兩個專用的Experience Platform資料集。
+* 已建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)，其中包含專用的Marketing Campaign Analytics資料集。
+* 已根據連線建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)。
+
+連線和資料檢視都是系統擁有的。 您無法更新或刪除連線或資料檢視。
+
+若要透過上述資料集、連線和資料檢視，讓模型分數資料可供Customer Journey Analytics使用：
+
+* 選擇「**[!UICONTROL Enable scores for Customer Journey Analytics]**」。
+
+  啟用此設定後，您只能透過刪除模型來停用設定。
+
+若要快速報告及分析您的Marketing Campaign Analytics資料，請在Customer Journey Analytics [工作區專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)中：
+
+1. 選取&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
+1. 選取專用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;做為專案使用的資料檢視。
+1. 選取&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [範本](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
+   * 選取&#x200B;**[!UICONTROL Preview]**&#x200B;檢視預覽。
+
+     ![Marketing Campaign Analytics範本預覽](/help/assets/model-cja-enable-template.png)
+   * 選取&#x200B;**[!UICONTROL Use template]**&#x200B;以根據範本建立專案。
+
 ### 精細見解報告欄位
 
 **[!UICONTROL Granular insights reporting fields]**&#x200B;區段使用精細的增量報表功能。 此功能可讓您選取協調的欄位，以劃分轉換和接觸點增量分數。
@@ -286,7 +318,7 @@ ht-degree: 7%
 
 您可以定義這些協調欄位，以便使用精細的報表欄在模型的報表中深入研究，而不必建立個別模型。
 
-例如，您建立的模型著重於收入，但您也會對行銷活動、媒體型別、地區和流量來源績效感興趣。 如果沒有精細的增量報表功能，您必須建立四個個別的模型。 使用細微的增量報告功能，您可以根據行銷活動、媒體型別、地區和流量來源來劃分收入模型。
+例如，您建立了以收入為重點的模型，但同時對於行銷活動、媒體型別、地區和流量來源績效也感興趣。 如果沒有精細的增量報表功能，您必須建立四個個別的模型。 使用細微的增量報告功能，您可以根據行銷活動、媒體型別、地區和流量來源來劃分收入模型。
 
 1. 從&#x200B;**[!UICONTROL Includes]**&#x200B;底下的&#x200B;**[!UICONTROL _選取協調欄位_]**&#x200B;中，選取一或多個協調欄位。 選取的協調欄位會新增至面板。
 1. 選取&#x200B;**[!UICONTROL *協調欄位&#x200B;*]**![CrossSize100](/help/assets/icons/CrossSize100.svg)，以從包含所選協調欄位的容器中移除協調欄位。
