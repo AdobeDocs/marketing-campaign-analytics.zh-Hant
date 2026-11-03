@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Email marketing
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 1b5be926bcc785602e9f722eae790f630b9564d4
+source-git-commit: 1e187d334357fc2696b7a15796d669f9632b63cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 8%
@@ -280,11 +280,12 @@ ht-degree: 8%
 
 ### Customer Journey Analytics {#cja}
 
-
 >[!CONTEXTUALHELP]
 >id="model_enable_cja"
 >title="啟用 Customer Journey Analytics"
 >abstract="若要讓分數資料可供Customer Journey Analytics用於報表和分析，請啟用此設定。 啟用後，您必須刪除模型才能停用此設定。"
+
+{{release-limited-testing-section}}
 
 當您有權使用Customer Journey Analytics，且已在特定沙箱中為Marketing Campaign Analytics建立一或多個[資料集規則](/help/harmonize-data/dataset-rules.md)時：
 
