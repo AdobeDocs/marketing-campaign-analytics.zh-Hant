@@ -304,7 +304,7 @@ ht-degree: 8%
 
 1. 選取&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
 1. 選取專用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;做為專案使用的資料檢視。
-1. 選取&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [範本](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
+1. 選取&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [範本](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
    * 選取&#x200B;**[!UICONTROL Preview]**&#x200B;檢視預覽。
 
      ![Marketing Campaign Analytics範本預覽](/help/assets/model-cja-enable-template.png)
