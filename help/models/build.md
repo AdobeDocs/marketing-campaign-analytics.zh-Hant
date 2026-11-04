@@ -290,8 +290,8 @@ ht-degree: 8%
 當您有權使用Customer Journey Analytics，且已在特定沙箱中為Marketing Campaign Analytics建立一或多個[資料集規則](/help/harmonize-data/dataset-rules.md)時：
 
 * 在您的Marketing Campaign Analytics沙箱中建立了兩個專用的Experience Platform資料集。
-* 已建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)，其中包含專用的Marketing Campaign Analytics資料集。
-* 已根據連線建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;的Customer Journey Analytics [資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)。
+* 已建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Enabled Connection (_sandbox-name _)]**的Customer Journey Analytics [連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)，其中包含專用的Marketing Campaign Analytics資料集。
+* 已根據連線建立標題為&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**的Customer Journey Analytics [資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)。
 
 連線和資料檢視都是系統擁有的。 您無法更新或刪除連線或資料檢視。
 
@@ -304,8 +304,8 @@ ht-degree: 8%
 若要快速報告及分析您的Marketing Campaign Analytics資料，請在Customer Journey Analytics [工作區專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)中：
 
 1. 選取&#x200B;**[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**。
-1. 選取專用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;做為專案使用的資料檢視。
-1. 選取&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [範本](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
+1. 選取專用的&#x200B;**[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**做為專案使用的資料檢視。
+1. 選取&#x200B;**[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [範本](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates)。
    * 選取&#x200B;**[!UICONTROL Preview]**&#x200B;檢視預覽。
 
      ![Marketing Campaign Analytics範本預覽](/help/assets/model-cja-enable-template.png)
@@ -327,7 +327,7 @@ ht-degree: 8%
 
 為精細增量報告選取的協調欄位可作為Experience Platform [結構描述](/help/ingest-data/schemas.md)和[資料集](/help/ingest-data/datasets.md)的一部分，這些資料來自對模型計分。 在&#x200B;**[!UICONTROL conversionPassthrough]**&#x200B;和&#x200B;**[!UICONTROL touchpointPassthrough]**&#x200B;物件中可以找到精細見解報告欄位。
 
-針對已啟用精細增量報告的模型，在結構描述中擷取conversionPassthrough和touchpointPassthrough物件的熒幕擷圖![&#128279;](/help/assets/schema-granular-insights-reporting.png)
+針對已啟用精細增量報告的模型，在結構描述中擷取conversionPassthrough和touchpointPassthrough物件的熒幕擷圖](/help/assets/schema-granular-insights-reporting.png)![
 
 
 ## 完成
