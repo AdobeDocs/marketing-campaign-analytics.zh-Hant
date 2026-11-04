@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: 5dfbd7542422d93969c2ffe44475d847693e8910
 workflow-type: tm+mt
-source-wordcount: '3099'
+source-wordcount: '3122'
 ht-degree: 10%
 ---
 # 模型深入分析
@@ -154,6 +154,8 @@ ht-degree: 10%
 >[!ENDTABS]
 
 將滑鼠指標暫留在任何流量上，就會看到快顯視窗，其中包含特定funnel流量的詳細資訊。
+
+與選取的funnel上層轉換相關聯的管道（如[轉換](/help/harmonize-data/conversions.md)中所定義）會顯示在視覺效果中心（例如： **[!UICONTROL Store]**）。
 
 ### 接觸點劃分
 
