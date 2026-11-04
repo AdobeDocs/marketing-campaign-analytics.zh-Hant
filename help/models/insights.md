@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: 5dfbd7542422d93969c2ffe44475d847693e8910
 workflow-type: tm+mt
-source-wordcount: '3099'
+source-wordcount: '3122'
 ht-degree: 10%
 ---
 # 模型深入分析
@@ -154,6 +154,8 @@ ht-degree: 10%
 >[!ENDTABS]
 
 將滑鼠指標暫留在任何流量上，就會看到快顯視窗，其中包含特定funnel流量的詳細資訊。
+
+與選取的funnel上層轉換相關聯的管道（如[轉換](/help/harmonize-data/conversions.md)中所定義）會顯示在視覺效果中心（例如： **[!UICONTROL Store]**）。
 
 ### 接觸點劃分
 
@@ -430,7 +432,7 @@ Marketing Campaign Analytics多點接觸歸因精細事件分數與整體[!DNL M
   ![模型評定](../assets/model-assessment.png)
 
   * 您可以根據實際與預測或剩餘轉換劃分的圖表。
-    若要劃分視覺效果，請從&#x200B;**[!UICONTROL Breakdown]**&#x200B;清單中選取下列其中一個選項。
+    若要劃分視覺效果，請從**[!UICONTROL Breakdown]**&#x200B;清單中選取下列其中一個選項。
 
     * **[!UICONTROL Actual vs Predicted]**：此選項會比較實際值與模型預測。 理想情況下，預測值應該與實際值緊密一致，雖然可能會出現一些偏差。 大型或系統的偏差或模式可能表示缺少的關係和資料或潛在的偏差。
 
